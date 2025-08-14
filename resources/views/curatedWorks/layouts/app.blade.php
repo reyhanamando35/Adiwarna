@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg-[#EBE0C2]">
-    <div class="px-16 py-12">
+    <div class="px-16 py-12 mx-auto">
         @yield('content')
     </div>
 </body>

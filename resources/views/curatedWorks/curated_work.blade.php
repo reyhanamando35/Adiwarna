@@ -3,13 +3,14 @@
 @section('content')
 @include('curatedWorks.partials.title')
 
-<div id="works-container" class="container mt-[10rem]">
+<div id="works-container" class="container mt-[10rem] mx-auto">
     <div class="grid grid-cols-3 gap-8 items-end">
         @include('curatedWorks.partials.card', [
             'class' => 'card-left rotate-[-8deg]',
-            'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
+            'title' => 'Iklan layanan masyarakat - kampanye sosial - 1 tujuan untuk indonesia merdeka',
             'name' => 'Jessica Wijaya',
             'nrp' => 'E12210217',
+            'image' => 'curated/curated1.png' ,
             'type' => 'Thesis'
         ])
 
@@ -18,6 +19,7 @@
             'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
             'name' => 'Jessica Wijaya',
             'nrp' => 'E12210217',
+            'image' => 'curated/curated1.png' ,
             'type' => 'Thesis'
         ])
 
@@ -26,6 +28,7 @@
             'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
             'name' => 'Jessica Wijaya',
             'nrp' => 'E12210217',
+            'image' => 'curated/curated1.png' ,
             'type' => 'Thesis'
         ])
 
@@ -38,6 +41,7 @@
             'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
             'name' => 'Jessica Wijaya',
             'nrp' => 'E12210217',
+            'image' => 'curated/curated1.png' ,
             'type' => 'Thesis'
         ])
 
@@ -46,6 +50,7 @@
             'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
             'name' => 'Jessica Wijaya',
             'nrp' => 'E12210217',
+            'image' => 'curated/curated1.png' ,
             'type' => 'Thesis'
         ])
 
@@ -54,6 +59,7 @@
             'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
             'name' => 'Jessica Wijaya',
             'nrp' => 'E12210217',
+            'image' => 'curated/curated1.png' ,
             'type' => 'Thesis'
         ])
 
@@ -72,7 +78,8 @@ for (let rowStart = 0; rowStart < cards.length; rowStart += cardsPerRow) {
     const middleIndex = Math.floor(rowCards.length / 2);
 
     rowCards.forEach((card, i) => {
-        let fromVars = {};
+        let fromVars = {
+        };
         let toVars = { 
             rotate: 0, 
             x: 0, 
@@ -86,10 +93,10 @@ for (let rowStart = 0; rowStart < cards.length; rowStart += cardsPerRow) {
         };
 
         if (i < middleIndex) {
-            fromVars = { rotate: -8, y: 0, x: 50 };
+            fromVars = { rotate: -8, y: 0, x: 50};
             toVars.y = 50;
         } else if (i > middleIndex) {
-            fromVars = { rotate: 8, y: 0, x: -50 };
+            fromVars = { rotate: 8, y: 0, x: -50,  };
             toVars.y = 50;
         } else {
             fromVars = { rotate: 0, y: 0, x: 0 };
