@@ -1,17 +1,20 @@
-<div class="card {{ $class }} bg-cover bg-center px-5 py-10 h-[408px] w-[326px] rounded-md"  style="background-image: url('{{ asset($image) }}');">
-    <div class="flex flex-col justify-between h-full">
-        <!-- title -->
-        <p class="font-['Sen',sans-serif] text-[28px] text-[#EBE0C2]">{{ Str::limit($title, 30) }}</p>
-        <div class="flex justify-between items-center">
+<a href="{{ $href }}" class="card-link block">
+    <div class="card group relative bg-cover bg-center h-[408px] w-[326px] rounded-md overflow-hidden cursor-pointer"
+         style="background-image: url('{{ asset($image) }}');">
+        
+        <!-- Dark overlay (only on hover) -->
+        <div class="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-60"></div>
+
+        <!-- Hidden text until hover -->
+        <div class="absolute inset-0 flex flex-col justify-between h-full px-5 py-10 
+                    opacity-0 translate-y-5 transition duration-500 
+                    group-hover:opacity-100 group-hover:translate-y-0">
+            <p class="font-['Sen',sans-serif] text-[30px] text-[#EBE0C2]">{{ Str::limit($title, 35) }}</p>
             <div class="flex flex-col gap-3">
-                <!-- name -->
-                <p class="font-['Sen',sans-serif] text-[22px] text-[#EBE0C2]">{{ $name }}</p>
-                <!-- nrp -->
-                <p class="font-['Sen',sans-serif] text-[22px] text-[#EBE0C2]">{{ $nrp }}</p>
-                <!-- jenis karya -->
-                <p class="font-['Sen',sans-serif] text-[22px] text-[#EBE0C2]">{{ $type }}</p>
+                <p class="font-['Sen',sans-serif] text-[20px] text-[#EBE0C2]">{{ $name }}</p>
+                <p class="font-['Sen',sans-serif] text-[20px] text-[#EBE0C2]">{{ $nrp }}</p>
+                <p class="font-['Sen',sans-serif] text-[20px] text-[#EBE0C2]">{{ $type }}</p>
             </div>
-            <a class="text-2xl text-[#EBE0C2] bg-[#A14000]">+</a>
-        </div>
-    </div> 
-</div>
+        </div> 
+    </div>
+</a>    
