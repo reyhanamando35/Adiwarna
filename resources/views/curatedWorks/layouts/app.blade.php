@@ -16,11 +16,41 @@
         .maragsa {
             font-family: 'Maragsa', serif;
         }
+
+        /* Works in Chrome, Edge, Safari */
+        #works-container::-webkit-scrollbar {
+            height: 12px;
+            /* for horizontal scroll */
+        }
+
+        #works-container::-webkit-scrollbar-track {
+            background: #67753E;
+            /* your olive green */
+        }
+
+        #works-container::-webkit-scrollbar-thumb {
+            background-color: #A14000;
+            /* accent orange/brown */
+            border-radius: 8px;
+        }
+
+        #works-container::-webkit-scrollbar-thumb:hover {
+            background-color: #7a2f00;
+            /* darker accent on hover */
+        }
+
+        /* Firefox support */
+        #works-container {
+            scrollbar-width: thin;
+            scrollbar-color: #A14000 #67753E;
+            /* thumb | track */
+        }
     </style>
 </head>
 
-<body class="bg-[#ece1c3]">
-    <div class="px-16 py-12 mx-auto">
+<body class="bg-[#ece1c3] overflow-x-hidden">
+            
+    <div class="px-16 py-12 mx-auto overflow-x-hidden relative">
         @yield('content')
     </div>
 </body>

@@ -1,6 +1,32 @@
 @extends('curatedWorks.layouts.app')
 
 @section('content')
+<style>
+    /* Works in Chrome, Edge, Safari */
+#artwork-viewport::-webkit-scrollbar {
+  height: 16px; /* for horizontal scroll */
+}
+
+#artwork-viewport::-webkit-scrollbar-track {
+  background: #67753E; /* your olive green */
+}
+
+#artwork-viewport::-webkit-scrollbar-thumb {
+  background-color: #A14000; /* accent orange/brown */
+  border-radius: 8px;
+}
+
+#artwork-viewport::-webkit-scrollbar-thumb:hover {
+  background-color: #7a2f00; /* darker accent on hover */
+}
+
+/* Firefox support */
+#artwork-viewport {
+  scrollbar-width: thin;
+  scrollbar-color: #A14000 #67753E; /* thumb | track */
+}
+
+</style>
 <div>
     <div class="flex items-center justify-between ">
         <h1 class="font-['Sen',sans-serif] tracking-[0.4em] text-[#67753E] text-[35px]">Curated works of</h1>
@@ -45,104 +71,16 @@
         </div>
     </div>
 
-    <div id="artwork" class="mt-[10rem] relative w-full mx-auto flex items-center">
-        <!-- Prev Button -->
-        <button id="prev"
-            class="absolute left-4 z-10
-        bg-[#67753E] text-white px-4 py-2 rounded-full shadow-lg
-        transition-all duration-300 ease-in-out
-        hover:bg-[#3c490c] hover:scale-110 hover:shadow-xl hover:-translate-x-1">
-            ←
-        </button>
-
-        <!-- Track -->
-        <div class="overflow-hidden w-full ">
-            <div id="carousel-track" class="flex gap-10">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="w-[340px] shadow-md">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="w-[340px] shadow-md">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="w-[340px] shadow-md">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="w-[340px] shadow-md">
+    <div id="artwork" class="relative mx-auto mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
+        <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
+            <div id="carousel-track" class="flex gap-6">
+                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-full lg:w-1/2 aspect-[3/4] object-cover shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-full lg:w-1/2 aspect-[4/3] object-cover shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-full lg:w-1/2 aspect-[4/3] object-cover shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-full lg:w-1/2 aspect-[4/3] object-cover shadow-md snap-center">
             </div>
         </div>
-
-        <!-- Next Button -->
-        <button id="next"
-            class="absolute right-4 z-10
-        bg-[#67753E] text-white px-4 py-2 rounded-full shadow-lg
-        transition-all duration-300 ease-in-out
-        hover:bg-[#3c490c] hover:scale-110 hover:shadow-xl hover:translate-x-1">
-            →
-        </button>
     </div>
 
-</div>
-<script>
-    document.getElementById('show-more').addEventListener('click', function() {
-        const moreInfo = document.getElementById('more-info');
-
-        if (moreInfo.classList.contains('hidden')) {
-            moreInfo.classList.remove('hidden');
-            gsap.fromTo(moreInfo.children, {
-                    opacity: 0,
-                    y: 30
-                }, // start
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.8,
-                    stagger: 0.3,
-                    ease: "power2.out"
-                } // end
-            );
-            this.textContent = "Show Less"; // toggle button text
-        } else {
-            gsap.to(moreInfo.children, {
-                opacity: 0,
-                y: 30,
-                duration: 0.6,
-                stagger: 0.2,
-                onComplete: () => moreInfo.classList.add('hidden')
-            });
-            this.textContent = "More Info";
-        }
-    });
-
-    const track = document.getElementById("carousel-track");
-    const prevBtn = document.getElementById("prev");
-    const nextBtn = document.getElementById("next");
-
-    let currentIndex = 0;
-    const items = track.children;
-    const gap = 24; // Tailwind gap-6 = 24px
-    let itemWidth = items[0].offsetWidth + gap;
-
-    // Find how many items fit in the viewport
-    const container = track.parentElement;
-    const visibleCount = Math.floor(container.offsetWidth / itemWidth);
-
-    // Maximum scroll index
-    const maxIndex = items.length - visibleCount;
-
-    function updateCarousel() {
-        gsap.to(track, {
-            x: -currentIndex * itemWidth,
-            duration: 0.8,
-            ease: "power2.inOut"
-        });
-    }
-
-    nextBtn.addEventListener("click", () => {
-        if (currentIndex < maxIndex) {
-            currentIndex++;
-            updateCarousel();
-        }
-    });
-
-    prevBtn.addEventListener("click", () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
-    });
-</script>
-@endsection
+    <script src="{{ asset('js/detail.js') }}"></script>
+    @endsection

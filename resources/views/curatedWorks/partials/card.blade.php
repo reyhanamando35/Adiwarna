@@ -1,5 +1,10 @@
 <a href="{{ $href }}" class="card-link block">
-    <div class="card group relative bg-cover bg-center h-[408px] w-[326px] rounded-md overflow-hidden cursor-pointer"
+    <div class="card group relative bg-cover bg-center
+    h-[326px] w-[261px] 
+    sm:h-[326px] sm:w-[261px] 
+    lg:h-[326px] lg:w-[261px]
+    xl:h-[408px] xl:w-[326px] 
+    rounded-md overflow-hidden cursor-pointer"
          style="background-image: url('{{ asset($image) }}');">
         
         <!-- Dark overlay (only on hover) -->
