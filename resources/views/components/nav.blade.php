@@ -2,11 +2,12 @@
     <div class="w-[90%] z-[10] flex items-center justify-between px-4">
         <div class="w-full max-w-[20%] flex justify-between items-center">
             <div id="logoContainer" class="flex flex-row-reverse gap-[7.5%] justify-center items-center">
-                <div class="w-[30px] aspect-square bg-[var(--beige)] mask-no-repeat mask-center mask-contain"
+                <div onclick="window.open('{{ route('home') }}')"
+                    class="w-[30px] cursor-pointer aspect-square bg-[var(--beige)] mask-no-repeat mask-center mask-contain"
                     style="mask-image: url('{{ asset('assets/logo/mekarya_hitam.png') }}'); -webkit-mask-image: url('{{ asset('assets/logo/mekarya_hitam.png') }}');">
                 </div>
-
-                <div class="w-[30px] aspect-square bg-[var(--beige)] mask-no-repeat mask-center mask-contain"
+                <div onclick="window.open('{{ route('home') }}')"
+                    class="w-[30px] cursor-pointer aspect-square bg-[var(--beige)] mask-no-repeat mask-center mask-contain"
                     style="mask-image: url('{{ asset('assets/logo/adiwow_hitam.png') }}'); -webkit-mask-image: url('{{ asset('assets/logo/adiwow_hitam.png') }}');">
                 </div>
             </div>
@@ -16,7 +17,6 @@
             <button id="navButton" type="button" class="cursor-default w-full h-full" data-twe-collapse-init
                 data-twe-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <!-- Hamburger icon -->
                 <span class="[&>svg]:stroke-black/50 cursor-pointer w-full h-full flex justify-center items-center"
                     id="burger">
                     <svg id="svgHam" class="ham ham6 toggle-btn w-full h-full" viewBox="0 0 100 100" width="30"
@@ -35,42 +35,74 @@
 
     <div id="menuCont"
         class="flex hidden bg-[var(--light-green)] z-[5] h-screen justify-center items-center absolute inset-0 pb-[5%] top-[-2%]">
-        <div id="menuHome" class="w-[23vw] aspect-square relative flex justify-center items-center rounded-full p-/">
+
+        <!-- HOME -->
+        <div id="menuHome" onclick="window.location.href='{{ route('home') }}'"
+            class="w-[23vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute left-[20%] top-[5%] w-full h-full flex justify-center items-center">
-                <div class="w-full h-full absolute rounded-full z-[2] bg-amber-400"></div>
+                <div
+                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('home') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+                </div>
                 <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Home</h1>
             </div>
         </div>
-        <div id="menuAbout" class="w-[19vw] aspect-square relative flex justify-center items-center rounded-full p-/">
+
+        <!-- ABOUT -->
+        <div id="menuAbout" onclick="window.location.href='{{ route('home') }}'"
+            class="w-[19vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute left-[12%] top-[65%] w-full h-full flex justify-center items-center">
-                <div class="w-full h-full absolute rounded-full z-[2] bg-amber-400"></div>
+                <div
+                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('about') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+                </div>
                 <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">About Us</h1>
             </div>
         </div>
-        <div id="menuWorks" class="w-[28vw] aspect-square relative flex justify-center items-center rounded-full p-/">
+
+        <!-- WORKS -->
+        <div id="menuWorks" onclick="window.location.href='{{ route('home') }}'"
+            class="w-[28vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute top-0 left-[-2%] w-full h-full flex justify-center items-center">
-                <div class="w-full h-full absolute rounded-full z-[2] bg-amber-400"></div>
+                <div
+                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('works') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+                </div>
                 <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Curated Works
                 </h1>
             </div>
         </div>
-        <div id="menuMerch" class="w-[17vw] aspect-square relative flex justify-center items-center rounded-full p-/">
+
+        <!-- MERCH -->
+        <div id="menuMerch" onclick="window.location.href='{{ route('home') }}'"
+            class="w-[17vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute left-[-10%] top-[54%] w-full h-full flex justify-center items-center">
-                <div class="w-full h-full absolute rounded-full z-[2] bg-amber-400"></div>
+                <div
+                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('merch') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+                </div>
                 <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Merch</h1>
             </div>
         </div>
-        <div id="menuEvents" class="w-[21vw] aspect-square relative flex justify-center items-center rounded-full p-/">
+
+        <!-- EVENTS -->
+        <div id="menuEvents" onclick="window.location.href='{{ route('events.upcoming') }}'"
+            class="w-[21vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute left-[-22%] top-[-10%] w-full h-full flex justify-center items-center">
-                <div class="w-full h-full absolute rounded-full z-[2] bg-amber-400"></div>
+                <div
+                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('events.*') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+                </div>
                 <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Events</h1>
             </div>
         </div>
     </div>
-
 </nav>
 
 <style>
+    h1,
+    a {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
     nav {
         padding: 12px 0px;
     }
@@ -142,73 +174,96 @@
         font-size: clamp(1em, 3vw, 10em);
         line-height: clamp(13px, 15px, 150px);
     }
-#menuCont > div {
-    transition: transform 0.3s ease, filter 0.3s ease, z-index 0.1s ease;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    outline: none;
-}
 
-#menuCont > div:focus {
-    outline: 3px solid rgba(245, 158, 11, 0.6);
-    outline-offset: 8px;
-    z-index: 50;
-}
+    #menuCont>div {
+        transition: transform 0.3s ease, filter 0.3s ease, z-index 0.1s ease;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        outline: none;
+    }
 
-#menuCont > div:hover,
-#menuCont > div:focus {
-    transform: scale(1.1);
-    filter: brightness(1.1);
-    z-index: 50;
-}
+    #menuCont>div:focus {
+        outline: 3px solid rgba(245, 158, 11, 0.6);
+        outline-offset: 8px;
+        z-index: 50;
+    }
 
-#menuCont > div:hover > div > div,
-#menuCont > div:focus > div > div {
-    transform: scale(1.05);
-    transition: transform 0.2s ease;
-}
+    #menuCont>div:hover,
+    #menuCont>div:focus {
+        transform: scale(1.1);
+        filter: brightness(1.1);
+        z-index: 50;
+    }
 
-#menuCont > div:active {
-    transform: scale(0.95);
-    transition: transform 0.1s ease;
-    z-index: 60;
-}
+    #menuCont>div:hover>div>div,
+    #menuCont>div:focus>div>div {
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
+    }
 
-#menuCont > div:hover > div > .bg-amber-400,
-#menuCont > div:focus > div > .bg-amber-400 {
-    animation: pulseGlow 0.6s ease-in-out;
-    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
-}
+    #menuCont>div:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+        z-index: 60;
+    }
 
-#menuCont > div:hover h1,
-#menuCont > div:focus h1 {
-    transform: scale(1.02);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, text-shadow 0.2s ease;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* Pulse glow keyframe */
-@keyframes pulseGlow {
-    0% {
+    #menuCont>div:hover>div>.bg-amber-400,
+    #menuCont>div:focus>div>.bg-amber-400 {
+        animation: pulseGlow 0.6s ease-in-out;
         box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
     }
-    50% {
-        box-shadow: 0 0 30px rgba(245, 158, 11, 0.6);
+
+    #menuCont>div:hover h1,
+    #menuCont>div:focus h1 {
+        transform: scale(1.02);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, text-shadow 0.2s ease;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
-    100% {
-        box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+
+    /* Active glow style */
+    .active-glow {
+        box-shadow: 0 0 20px rgba(235, 224, 194, 0.6);
+        animation: pulseGlow 1.2s infinite ease-in-out;
     }
-}
+
+    @keyframes pulseGlow {
+        0% {
+            box-shadow: 0 0 15px rgba(235, 224, 194, 0.4);
+        }
+
+        50% {
+            box-shadow: 0 0 30px rgba(235, 224, 194, 0.8);
+        }
+
+        100% {
+            box-shadow: 0 0 15px rgba(235, 224, 194, 0.4);
+        }
+    }
+
+    #menuCont>div {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    #menuCont>div:hover {
+        transform: scale(1.1);
+        filter: brightness(1.1);
+        z-index: 50;
+    }
+
+    #menuCont>div:hover>div>.bg-\[\#EBE0C2\]/60 {
+        background-color: #EBE0C2;
+        box-shadow: 0 0 15px rgba(235, 224, 194, 0.5);
+    }
 
     @media (min-width: 401px) {
         #logoContainer>div {
@@ -238,7 +293,14 @@
 </style>
 
 <script>
+    document.addEventListener("contextmenu", function(e) {
+        if (e.target.closest("img, video")) {
+            e.preventDefault();
+        }
+    });
     document.addEventListener('DOMContentLoaded', function() {
+
+
         let menuCont = document.getElementById('menuCont');
         let burger = document.getElementById('svgHam');
 
@@ -320,25 +382,29 @@
         let lastScrollY = window.scrollY;
         let navVisible = true;
 
-        ScrollTrigger.create({
-            trigger: '#vidCont',
-            start: "bottom top",
-            end: "bottom 20%",
-            markers: false,
-            invalidateOnRefresh: true,
-            onEnter: () => {
-                window.addEventListener("scroll", handleScroll);
-            },
-            onLeaveBack: () => {
-                gsap.to("nav", {
-                    y: "-100%",
-                    duration: 0.5,
-                    ease: "power2.in"
-                });
-                navVisible = false;
-                window.removeEventListener("scroll", handleScroll);
-            }
-        });
+        const vidCont = document.querySelector("#vidCont");
+
+        if (vidCont) {
+            ScrollTrigger.create({
+                trigger: "#vidCont",
+                start: "bottom top",
+                end: "bottom 20%",
+                markers: false,
+                invalidateOnRefresh: true,
+                onEnter: () => {
+                    window.addEventListener("scroll", handleScroll);
+                },
+                onLeaveBack: () => {
+                    gsap.to("nav", {
+                        y: "-100%",
+                        duration: 0.5,
+                        ease: "power2.in"
+                    });
+                    navVisible = false;
+                    window.removeEventListener("scroll", handleScroll);
+                }
+            });
+        }
 
         function handleScroll() {
             let currentScrollY = window.scrollY;
@@ -366,8 +432,11 @@
 
 
         // Navbar hanya muncul di bawah / setelah vidCont
-        gsap.set("nav", {
-            y: '-100%'
-        })
+        if (vidCont) {
+            gsap.set("nav", {
+                y: '-100%'
+            })
+        }
+        window.addEventListener('scroll', handleScroll)
     });
 </script>

@@ -42,12 +42,13 @@
     <div class="footer-right">
         <div class="footer-links-container">
             <div class="footer-links">
-                <div class="active">Home</div>
-                <div>About Us</div>
-                <div>Curated Works</div>
-                <div>Events</div>
-                <div>Merch</div>
+                <div onclick="window.location.href='{{ route('home') }}'" class="{{ request()->routeIs('home') ? 'active' : '' }}">Home</div>
+                <div onclick="window.location.href='{{ route('home') }}'" class="{{ request()->routeIs('about') ? 'active' : '' }}">About Us</div>
+                <div onclick="window.location.href='{{ route('home') }}'" class="{{ request()->routeIs('works.*') ? 'active' : '' }}">Curated Works</div>
+                <div onclick="window.location.href='{{ route('events.upcoming') }}'" class="{{ request()->routeIs('events.*') ? 'active' : '' }}">Events</div>
+                <div onclick="window.location.href='{{ route('events.upcoming') }}'" class="{{ request()->routeIs('merch') ? 'active' : '' }}">Merch</div>
             </div>
+
         </div>
 
         <div class="copyright">
@@ -126,9 +127,7 @@
         opacity: 0.3;
         pointer-events: none;
     }
-
-
-
+    
     .footer-left {
         width: 100%;
         display: flex;
@@ -286,11 +285,12 @@
     .footer-links div {
         cursor: pointer;
         width: 100%;
-        transition: color 0.2s;
         font-size: clamp(1em, 1.5vw, 4em);
         display: flex;
         align-items: center;
         justify-content: start;
+        position: relative;
+        transition: color 0.3s ease, transform 0.3s ease;
     }
 
     .footer-links div::before {
@@ -302,15 +302,35 @@
         background-color: var(--gold);
         border-radius: 50%;
         opacity: 0;
+        transform: scale(0.65);
+        transition: all 0.3s ease;
+    }
+
+    .footer-links div.active {
+        color: var(--gold);
+        font-weight: 600;
+        transform: translateX(0.5%);
     }
 
     .footer-links div.active::before {
         opacity: 1;
+        transform: scale(1);
+    }
+
+    .footer-links div:hover {
+        color: #fff8e5;
+        /* lebih terang saat hover */
+        transform: translateX(0.5%);
     }
 
     .footer-links div:hover::before {
-        background-color: yellow;
+        opacity: 1;
+        background-color: transparent;
+        border: 0.05em solid var(--gold);
+        /* tetap gold biar konsisten */
+        transform: scale(1.2);
     }
+
 
     .copyright {
         position: absolute;

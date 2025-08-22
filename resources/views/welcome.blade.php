@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 @section('content')
+    @php
+        request()->routeIs('home');
+    @endphp
+
     <div class="w-screen max-w-screen relative flex flex-col bg-[var(--beige)] justify-center items-end z-[988]">
 
         <div id="vidCont" class="w-full h-screen flex justify-center items-center overflow-hidden">
@@ -48,7 +52,7 @@
                     </h1>
                 </div>
                 <div class="w-full flex justify-center items-center relative group overflow-hidden">
-                    <h1 id="-adi" onclick="window.open('{{ config('app.url') }}', '_blank')"
+                    <h1 id="-adi" onclick="window.location.href='{{ route('home') }}'"
                         class="font-maragsa z-[10] text-[var(--light-green)] transition-transform duration-700 ease-out overflow-hidden relative">
                         -Adiwarna Mekarya 2025-
                     </h1>
@@ -89,11 +93,11 @@
 
                 /* REMOVE ALL HOVER EFFECTS - GSAP will handle them */
                 /* Remove these problematic CSS hover rules:
-                #-adi:hover { ... }
-                #-adi:hover ~ #aa { ... }
-                .hover-once ~ #aa { ... }
-                .unhover-once ~ #aa { ... }
-                */
+                        #-adi:hover { ... }
+                        #-adi:hover ~ #aa { ... }
+                        .hover-once ~ #aa { ... }
+                        .unhover-once ~ #aa { ... }
+                        */
 
                 /* Keep only the keyframes for fallback, but make them unused */
                 @keyframes smoothSlideIn {
@@ -149,25 +153,28 @@
                     ">
             </div>
             <div id="homePosterCont" class="w-[90%] sm:w-[80%] mt-[-3%] z-[16] flex justify-center items-center">
-                <div data-aos-duration="1500" data-aos="example-anim1"  data-aos-offset="700" class="z-[980] relative w-[30%] mb-[20%]" style="filter: blur(1.2px);">
+                <div onclick="window.location.href= '{{ route('events.upcoming') }}'" data-aos-duration="1500" data-aos="example-anim1" data-aos-offset="700"
+                    class="z-[980] relative w-[30%] mb-[20%]" style="filter: blur(1.2px);">
                     <div class="absolute inset-0 flex justify-center items-center z-[978]">
                         <span class="font-maragsa text-[var(--light-green)]">Events</span>
                     </div>
-                    <img class="w-full h-full z-[979] relative" src="{{ asset('assets/homePoster/eventHome.png') }}"
+                    <img class="w-full h-full cursor-pointer z-[979] relative" src="{{ asset('assets/homePoster/eventHome.png') }}"
                         alt="Poster Event">
                 </div>
-                <div data-aos-duration="1500" data-aos="zoom-in-up" data-aos-offset="700"  class="z-[981] mx-[-3%] relative w-[52.5%]" style="filter: blur(1.2px);">
+                <div onclick="window.location.href= '{{ route('events.upcoming') }}'" data-aos-duration="1500" data-aos="zoom-in-up" data-aos-offset="700"
+                    class="z-[981] mx-[-3%] relative w-[52.5%]" style="filter: blur(1.2px);">
                     <div class="absolute inset-0 flex justify-center items-center z-[978]">
                         <span class="font-maragsa text-[var(--light-green)]">Curated Works</span>
                     </div>
-                    <img class="w-full h-full z-[979] relative" src="{{ asset('assets/homePoster/categoryHome.png') }}"
+                    <img class="w-full h-full cursor-pointer z-[979] relative" src="{{ asset('assets/homePoster/categoryHome.png') }}"
                         alt="Category Event">
                 </div>
-                <div data-aos-duration="1500" data-aos="example-anim2"  data-aos-offset="700" class="z-[982] relative w-[22.5%] mb-[35%]" style="filter: blur(1.2px);">
+                <div onclick="window.location.href= '{{ route('events.upcoming') }}'" data-aos-duration="1500" data-aos="example-anim2" data-aos-offset="700"
+                    class="z-[982] relative w-[22.5%] mb-[35%]" style="filter: blur(1.2px);">
                     <div class="absolute inset-0 flex justify-center items-center z-[978]">
                         <span class="font-maragsa text-[var(--light-green)]">Merch</span>
                     </div>
-                    <img class="w-full h-full z-[979] relative" src="{{ asset('assets/homePoster/merchHome.png') }}"
+                    <img class="w-full h-full cursor-pointer z-[979] relative" src="{{ asset('assets/homePoster/merchHome.png') }}"
                         alt="Merch Event">
                 </div>
             </div>
@@ -175,7 +182,8 @@
             {{-- SPONSOR --}}
             <div class="flex z-[800] justify-center items-center w-full">
                 <div id="sponsorCont" class="w-[90%] my-[3%] flex flex-col justify-center items-center z-[16]">
-                    <div data-aos="zoom-out-up" data-aos-duration="1200" data-aos-offset="1000" class="flex w-full justify-center items-center">
+                    <div data-aos="zoom-out-up" data-aos-duration="1200" data-aos-offset="1000"
+                        class="flex w-full justify-center items-center">
                         <div id="leftSponsor"
                             class="w-[10%] z-[800] p-[2%] aspect-square flex justify-center items-center rounded-full cursor-pointer">
                             <svg width="100%" height="100%" viewBox="0 0 29 52" fill="none"
@@ -355,6 +363,7 @@
                     opacity: 1;
                 }
             }
+
             [data-aos="example-anim2"] {
                 transform: skewX(-50deg);
                 opacity: 0;
@@ -716,7 +725,7 @@
                     setSliderPosition();
                     if (isDragging) requestAnimationFrame(animation);
                 }
-                
+
             });
         </script>
     @endsection()

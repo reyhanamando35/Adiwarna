@@ -44,6 +44,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+
     <style>
         html,
         body {
@@ -77,6 +79,10 @@
             src: url('{{ asset('assets/font/maragsa.otf') }}') format('truetype');
             font-weight: 700;
             font-style: normal;
+        }
+
+        .font-sen {
+            font-family: 'Sen', sans-serif;
         }
 
         .font-maragsa {
