@@ -34,6 +34,7 @@
             width: 60vw; /* Lebar utama berdasarkan viewport */
             max-width: 1200px;
             aspect-ratio: 8.5 / 11; /* Menjaga rasio seperti kertas A4 */
+            padding: 32px;
         }
 
         /* Gambar Bunga Sidik Jari */
@@ -162,40 +163,61 @@
             }
         }
 
-        /* Penyesuaian untuk layar yang lebih kecil (Tablet/Mobile) */
         @media (max-width: 768px) {
-            body {
-                overflow: auto;
-                padding: 20px;
-            }
-            .main-container {
-                position: static;
-                width: 90%;
-                aspect-ratio: auto;
-                min-height: auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-            .title-image {
-            position: absolute;
-            top: 3vw;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 154%; /* dari 80% jadi 95% agar title.png lebih besar */
-            z-index: 3;
-        }
-            .text-block {
-                font-size: 16px;
-            }
-            #text-footer {
-                 font-size: 20px;
-            }
-            #text-footer strong {
-                font-size: 28px;
-            }
-        }
+    body {
+        overflow: auto;
+        padding: 20px;
+    }
+    .main-container {
+        position: static;
+        width: 100%;
+        aspect-ratio: auto;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    .title-image{
+        position: static;
+        width: 120%;
+        margin: 0 0 20px 0;
+        transform: none;
+        text-align: left;
+    }
+    .flower-image {
+        position: static;
+        width: 90%;
+        margin: 0 auto 20px auto;
+        transform: none;
+    }
+    .text-block {
+        position: static;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: left;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+    #text-4, #text-5 {
+        text-align: right;
+        padding-right: 8px;
+        padding-left: 0;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.7;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #text-footer img {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+        
 
     </style>
 </head>
@@ -265,10 +287,10 @@
         </div>
         
         <div id="text-5" class="text-block">
-            Berlandaskan filosofi bertumbuh,<br>
-            berbunga, dan berbuah, masa<br>
-            kelulusan bukanlah akhir,<br>
-            melainkan awal dari<br>
+            Berlandaskan filosofi bertumbuh,
+            berbunga, dan berbuah, masa
+            kelulusan bukanlah akhir,
+            melainkan awal dari
             keberanian untuk<br>
             terus berkembang.
         </div>
@@ -281,4 +303,4 @@
     </div>
 
 </body>
-</html>
+</html> 
