@@ -66,6 +66,7 @@
             --dark-green: #3c490c;
             --red: #a14000;
             --beige: #ece1c3;
+            --gold: #EBE0C2;
             --yellow: #d3b84d;
             --pink: #ffbebb;
             --blue: #7593ad;
