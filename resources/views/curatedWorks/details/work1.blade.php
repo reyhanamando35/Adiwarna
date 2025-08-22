@@ -27,57 +27,61 @@
 }
 
 </style>
+
+<div class="absolute lg:top-[8rem] sm:-top-[10rem] -top-[21rem] lg:h-[900px] h-[1300px] -rotate-12 lg:-right-[5rem] sm:-right-[1rem] -right-[1rem] w-1/2 bg-[url('{{ asset('asset/images/curated/tanaman-coklat.png') }}')] 
+                bg-no-repeat bg-right bg-contain  pointer-events-none"></div>
 <div>
-    <div class="flex items-center justify-between ">
-        <h1 class="font-['Sen',sans-serif] tracking-[0.4em] text-[#67753E] text-[35px]">Curated works of</h1>
+    <div class="flex items-center justify-between">
+        <h1 class="font-['Sen',sans-serif] tracking-[0.4em] text-[#67753E] text-[12px] sm:text-[25px] lg:text-[35px]">Curated works of</h1>
         <a href="{{ url('/curated-works') }}"
-            class="inline-flex font-['Sen',sans-serif] items-center gap-2 text-[#A14000] text-[25px] tracking-[0.4em] bg-[#EBE0C2] px-6 py-3 rounded-lg">
+            class="inline-flex font-['Sen',sans-serif] items-center gap-0 sm:gap-2 text-[#A14000] text-[12px] sm:text-[15px] lg:text-[25px] tracking-[0.4em] bg-[#EBE0C2] px-0 sm:px-6 py-3 rounded-lg">
             <!-- Arrow -->
-            <span class="text-[20px]">←</span>
+            <span class="text-[15px] lg:text-[20px]">←</span>
             <!-- Text -->
             Go back
         </a>
     </div>
-    <h1 class="w-[80%] m-0 mt-10 maragsa text-[#A14000] font-bold text-[45px] leading-none">Membaca Representasi Sandwich Generation
+    <h1 class=" w-full sm:w-[80%] sm:mt-10 lg:mt-20 maragsa text-[#A14000] font-bold text-[22px] sm:text-[35px] lg:text-[45px] leading-none">Membaca Representasi Sandwich Generation
         dalam Serial Nightmares and Daydreams
         Karya Joko Anwar </h1>
 
     <!-- body -->
-    <div class="mt-20 flex gap-36">
+    <div class=" sm:mt-24 lg:mt-36 flex flex-col lg:flex-row-reverse gap-10 sm:gap-[20rem] lg:gap-36 items-center">
+        <!-- image -->
+        <div class="z-10 mt-10 sm:mt-0 sm:h-[10rem] sm:w-[22rem] lg:h-auto lg:w-auto">
+            <img src="{{ asset('asset/images/curated/orang1.png') }}">
+        </div>
         <!-- text -->
         <div class="w-4/5">
-            <h1 class="maragsa text-[#67753E] text-[45px]">Jasmine Claudia</h1>
-            <h1 class="maragsa text-[#67753E] text-[35px] mt-5">E12210103 - Thesis</h1>
-            <p class="mt-5 text-[20px]">
+            <h1 class="maragsa text-[#67753E] text-[28px] sm:text-[35px] lg:text-[45px]">Jasmine Claudia</h1>
+            <h1 class="maragsa text-[#67753E] text-[18px] sm:text-[25px] lg:text-[35px] mt-2 lg:mt-5">E12210103 - Thesis</h1>
+            <p class="mt-10 lg:mt-5 text-[15px] lg:text-[20px]">
                 Meningkatnya eksistensi serial lokal di platform digital seperti Netflix membuka ruang baru bagi representasi isu sosial dalam bentuk visual. Salah satunya adalah fenomena sandwich generation, yakni generasi yang menopang dua generasi sekaligus: merawat orang tua dan membesarkan anak di tengah tekanan ekonomi serta budaya. Dalam konteks Indonesia, beban ini diperberat oleh nilai filial piety atau kewajiban moral untuk berbakti kepada orang tua. Serial Nightmares and Daydreams karya Joko Anwar, khususnya episode “Old House”, merepresentasikan dilema tersebut secara simbolis melalui pendekatan supernatural dan misteri.
             </p>
             <div id="more-info" class="hidden">
-                <p class="mt-5 text-[20px]">
+                <p class="mt-5 text-[15px] lg:text-[20px]">
                     Melalui episode tersebut, penelitian ini bertujuan mengeksplorasi bagaimana tekanan emosional, konflik moral, dan beban sosial yang dialami sandwich generation direpresentasikan secara visual. Tokoh utama digambarkan berada dalam dilema antara tuntutan budaya dan keterbatasan hidup, di tengah minimnya dukungan struktural dari lingkungan sosial. Kajian ini dilakukan melalui pendekatan kualitatif dengan menggunakan teori representasi Stuart Hall dan semiotika Charles Sanders Peirce untuk menafsirkan makna-makna yang tersirat dalam simbol, ekspresi visual, dan dialog.
                 </p>
-                <p class="mt-5 text-[20px]">
+                <p class="mt-5 text-[15px] lg:text-[20px]">
                     Sebagai bentuk kontribusi, hasil analisis ini menawarkan pendekatan visual untuk membangun kesadaran, menumbuhkan empati, dan membuka ruang diskusi terkait isu sandwich generation. Hasil akhir berupa karya tulis ilmiah ini tidak hanya menyoroti bagaimana media membentuk narasi sosial, tetapi juga memperkaya perspektif dalam bidang Desain Komunikasi Visual serta wacana akademik mengenai representasi isu sosial kontemporer.
                 </p>
             </div>
 
-            <button id="show-more" class="mt-5 px-8 py-4 bg-[#67753E] text-[25px]  text-[#EBE0C2] rounded-full mb-10">
+            <button id="show-more" class="mt-5 lg:px-8 lg:py-4 sm:px-5 sm:py-2 px-4 py-1 bg-[#67753E] text-[15px] sm:text-[20px] lg:text-[25px]  text-[#EBE0C2] rounded-full mb-10">
                 More Info
             </button>
 
         </div>
-        <!-- image -->
-        <div class="">
-            <img src="{{ asset('asset/images/curated/orang1.png') }}">
-        </div>
+        
     </div>
 
-    <div id="artwork" class="relative mx-auto mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
+    <div id="artwork" class="relative mx-auto sm:mt-[5rem] lg:mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
         <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
             <div id="carousel-track" class="flex gap-6">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-full lg:w-1/2 aspect-[3/4] object-cover shadow-md snap-center">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-full lg:w-1/2 aspect-[4/3] object-cover shadow-md snap-center">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-full lg:w-1/2 aspect-[4/3] object-cover shadow-md snap-center">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-full lg:w-1/2 aspect-[4/3] object-cover shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-1/2 sm:w-1/3 lg:w-1/3 aspect-[3/4] object-cover shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-1/2  sm:w-1/3 lg:w-1/3 aspect-[4/3] object-cover shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-1/2  sm:w-1/3 lg:w-1/3 aspect-[4/3] object-cover shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-1/2  sm:w-1/3 lg:w-1/3 aspect-[4/3] object-cover shadow-md snap-center">
             </div>
         </div>
     </div>
