@@ -169,31 +169,31 @@
         ])
         <!-- work 17 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work17']),
         'class' => 'card-middle',
         'title' => 'Perancangan Strategi Komunikasi Brand Katering Ny. Yoga',
         'name' => 'Michele Swandy',
         'nrp' => 'E12210126',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated17/curated_c.jpg',
         'type' => 'Brand & Product Innovation',
         ])
-
+        <!-- work 18 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work18']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
+        'title' => 'Perancangan kampanye sosial mengenai pentingnya peregangan bagi Remaja Jompo',
+        'name' => 'Michelle Amelia',
         'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'image' => 'asset/images/curated/curated18/curated_b.jpg',
+        'type' => 'Campaign',
         ])
-
+        <!-- work 19 -->
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work1']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Iklan layanan masyarakat - kampanye sosial - 1 tujuan untuk indonesia merdeka',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => "Analisis Visual Karakter Sebagai Media Pendidikan dan Pembangunan Karakter Generasi Z : Studi Kasus Howl/'s Moving Castle Produksi Studio Ghibli",
+        'name' => 'Amadea Levina',
+        'nrp' => 'E12210077',
         'image' => 'asset/images/curated/curated1.png',
         'type' => 'Thesis'
         ])
