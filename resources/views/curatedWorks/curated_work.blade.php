@@ -117,14 +117,14 @@
         'image' => 'asset/images/curated/curated11/curated_a.png',
         'type' => 'Thesis',
         ])
-        <!-- work 12, not done yet -->
+        <!-- work 12-->
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work12']),
         'class' => 'card-right rotate-[8deg]',
         'title' => 'Perancangan Board Game Sebagai Media Edukasi Untuk Mempersiapkan Anak Muda Sebelum Menikah',
         'name' => 'Klaudia',
         'nrp' => 'E12210045',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated12/curated_e.jpg',
         'type' => 'Graphic Design',
         ])
         <!-- work 13 -->
