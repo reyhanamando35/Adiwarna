@@ -147,35 +147,35 @@
         'image' => 'asset/images/curated/curated14/curated_b.jpg',
         'type' => 'Thesis',
         ])
-
+        <!-- work 15 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work15']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Gim Interaktif mengenai Literasi Keuangan untuk Generasi Alfa',
+        'name' => 'David Fortino',
+        'nrp' => 'E12210047',
+        'image' => 'asset/images/curated/curated15/curated_c.png',
+        'type' => 'Digital Media',
         ])
-
+        <!-- work 16 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work16']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Kampanye Reparenting Wounded Innerchild bagi Gen Z',
+        'name' => 'Liem Abigail',
+        'nrp' => 'E12210031',
+        'image' => 'asset/images/curated/curated16/curated_c.JPG',
+        'type' => 'Campaign',
         ])
-
+        <!-- work 17 -->
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work1']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Perancangan Strategi Komunikasi Brand Katering Ny. Yoga',
+        'name' => 'Michele Swandy',
+        'nrp' => 'E12210126',
         'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'type' => 'Brand & Product Innovation',
         ])
 
         @include('curatedWorks.partials.card', [

@@ -45,7 +45,7 @@
             Go back
         </a>
     </div>
-    <h1 class=" w-full sm:w-[80%] sm:mt-10 lg:mt-20 maragsa text-[#A14000] font-bold text-[22px] sm:text-[35px] lg:text-[45px] leading-none">Perancangan rebranding logo dan strategi promosi Bakwan Family melalui sosial media</h1>
+    <h1 class=" w-full sm:w-[80%] sm:mt-10 lg:mt-20 maragsa text-[#A14000] font-bold text-[22px] sm:text-[35px] lg:text-[45px] leading-none">Analisis Personal Branding Lisa Blackpink dalam Tren Gaya Hidup Gen-Z</h1>
 
     <!-- body -->
     <div class=" sm:mt-24 lg:mt-36 flex flex-col lg:flex-row-reverse gap-10 sm:gap-[20rem] lg:gap-36 items-center">
@@ -56,7 +56,7 @@
         <!-- text -->
         <div class="w-4/5">
             <h1 class="maragsa text-[#67753E] text-[28px] sm:text-[35px] lg:text-[45px]">Charlenne Chay</h1>
-            <h1 class="maragsa text-[#67753E] text-[18px] sm:text-[25px] lg:text-[35px] mt-2 lg:mt-5">E12210162 - Analisis Personal Branding Lisa Blackpink dalam Tren Gaya Hidup Gen-Z</h1>
+            <h1 class="maragsa text-[#67753E] text-[18px] sm:text-[25px] lg:text-[35px] mt-2 lg:mt-5">E12210162 - Thesis</h1>
             <p class="mt-10 lg:mt-5 text-[15px] lg:text-[20px]">
                 Penelitian ini menganalisis strategi personal branding yang diterapkan oleh Lisa BLACKPINK serta dampaknya terhadap tren gaya hidup Gen- Z. Sebagai generasi yang sangat aktif di dunia digital dan sosial media, Gen-Z sangat responsif terhadap pengaruh figur publik di platform digital. Lisa, sebagai artis yang diakui secara global, telah berhasil memposisikan dirinya tidak hanya sebagai performer, tetapi juga sebagai trendsetter dan brand ambassador yang berpengaruh melalui platform seperti Instagram dan TikTok. Dengan menggunakan metode kualitatif dengan pendekatan triangulasi toeriyang menggabungkan kerangka personal branding otentik dari Rampersad, teori tren gaya hidup, serta teori fandom dari Mark Duffett. Pendekatan ini digunakan untuk memahami secara menyeluruh bagaimana citra dan narasi digital Lisa mempengaruhi persepsi audiens muda dalam membentuk identitas serta preferensi gaya hidup mereka.
 
