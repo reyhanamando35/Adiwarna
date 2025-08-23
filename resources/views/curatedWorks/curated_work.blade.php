@@ -189,33 +189,33 @@
         ])
         <!-- work 19 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work19']),
         'class' => 'card-left rotate-[-8deg]',
         'title' => "Analisis Visual Karakter Sebagai Media Pendidikan dan Pembangunan Karakter Generasi Z : Studi Kasus Howl/'s Moving Castle Produksi Studio Ghibli",
         'name' => 'Amadea Levina',
         'nrp' => 'E12210077',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated19/curated_b.jpg',
         'type' => 'Thesis'
         ])
-
+        <!-- work 20 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work2']),
+        'href' => route('curatedWorks.details', ['slug' => 'work20']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Board Game untuk Menjembatani Permasalahan Miskomunikasi Generation Gap antara Generasi Millennial dengan Generasi Alpha',
+        'name' => 'Evan Tjandra',
+        'nrp' => 'E12210111',
+        'image' => 'asset/images/curated/curated20/curated_b.jpg',
+        'type' => 'Graphic Design',
         ])
-
+        <!-- work 21 -->
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work1']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Perancangan Strategi Komunikasi Brand untuk Pouch Pembalut Antimicrobial',
+        'name' => 'Tiffany Gricella',
+        'nrp' => 'E12210215',
         'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'type' => 'Brand & Product Innovation',
         ])
 
         @include('curatedWorks.partials.card', [

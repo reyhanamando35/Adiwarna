@@ -51,7 +51,7 @@
     <div class=" sm:mt-24 lg:mt-36 flex flex-col lg:flex-row-reverse gap-10 sm:gap-[20rem] lg:gap-36 items-center">
         <!-- image -->
         <div class="z-10 mt-10 sm:mt-0 sm:h-[10rem] sm:w-[22rem] lg:h-auto lg:w-2/3">
-            <img src="{{ asset('asset/images/curated/curated17/orang.jpg') }}">
+            <img src="{{ asset('asset/images/curated/curated18/orang.jpg') }}">
         </div>
         <!-- text -->
         <div class="w-4/5">
