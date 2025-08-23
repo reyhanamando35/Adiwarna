@@ -45,7 +45,7 @@
             Go back
         </a>
     </div>
-    <h1 class=" w-full sm:w-[80%] sm:mt-10 lg:mt-20 maragsa text-[#A14000] font-bold text-[22px] sm:text-[35px] lg:text-[45px] leading-none">Perancangan Strategi Komunikasi Brand untuk Pouch Pembalut Antimicrobial</h1>
+    <h1 class=" w-full sm:w-[80%] sm:mt-10 lg:mt-20 maragsa text-[#A14000] font-bold text-[22px] sm:text-[35px] lg:text-[45px] leading-none">Analisis Revolusi AI Dalam Desain: Studi Kasus Agensi Kreatif di Grow In Asia.</h1>
 
     <!-- body -->
     <div class=" sm:mt-24 lg:mt-36 flex flex-col lg:flex-row-reverse gap-10 sm:gap-[20rem] lg:gap-36 items-center">
@@ -55,15 +55,16 @@
         </div>
         <!-- text -->
         <div class="w-4/5">
-            <h1 class="maragsa text-[#67753E] text-[28px] sm:text-[35px] lg:text-[45px]">THanny Danawati Tanaka</h1>
+            <h1 class="maragsa text-[#67753E] text-[28px] sm:text-[35px] lg:text-[45px]">Hanny Danawati Tanaka</h1>
             <h1 class="maragsa text-[#67753E] text-[18px] sm:text-[25px] lg:text-[35px] mt-2 lg:mt-5">E12210011 - Campaign</h1>
             <p class="mt-10 lg:mt-5 text-[15px] lg:text-[20px]">
                 
-Bitetiful is a social campaign that addresses the low consumption of fruits and vegetables among Indonesian youth. Only 3.6 percent of teenagers consume the recommended five servings per day, far below the standard set by WHO. The campaign targets young women aged 17 to 25 who care about their appearance but tend to avoid fruits and vegetables. Bitetiful introduces the concept of “edible skincare” by promoting fruits and vegetables as a natural way to achieve healthy, glowing skin. Instead of focusing on general health benefits, the campaign highlights how nutrients from fruits and vegetables contribute to natural beauty. It positions them as the safest form of skincare suitable for all skin types. 
+
+Bitetiful is a social campaign that addresses the low consumption of fruits and vegetables among Indonesian youth. Only 3.6 percent of teenagers consume the recommended five servings per day, far below the standard set by WHO. The campaign targets young women aged 17 to 25 who care about their appearance but tend to avoid fruits and vegetables. Bitetiful introduces the concept of “edible skincare” by promoting fruits and vegetables as a natural way to achieve healthy, glowing skin. Instead of focusing on general health benefits, the campaign highlights how nutrients from fruits and vegetables contribute to natural beauty. 
             </p>
             <div id="more-info" class="hidden">
                 <p class="mt-5 text-[15px] lg:text-[20px]">
-                    To deliver its message, Bitetiful combines digital activation on Instagram with engaging offline experiences. These include public social experiences, a collaborative menu with a healthy cafe, offline booth, a pre-order launch of the Bitetiful Edible Skincare Pack, and a campaign jingle. Through this approach, Bitetiful encourages Gen Z to embrace healthy habits by showing that beauty can start from what you eat.
+                    It positions them as the safest form of skincare suitable for all skin types. To deliver its message, Bitetiful combines digital activation on Instagram with engaging offline experiences. These include public social experiences, a collaborative menu with a healthy cafe, offline booth, a pre-order launch of the Bitetiful Edible Skincare Pack, and a campaign jingle. Through this approach, Bitetiful encourages Gen Z to embrace healthy habits by showing that beauty can start from what you eat.
                 </p>
             </div>
 
@@ -78,9 +79,11 @@ Bitetiful is a social campaign that addresses the low consumption of fruits and 
     <div id="artwork" class="relative mx-auto sm:mt-[5rem] lg:mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
         <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
             <div id="carousel-track" class="flex gap-6">
-                <img src="{{ asset('asset/images/curated/curated19/curated_a.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
-                <img src="{{ asset('asset/images/curated/curated19/curated_b.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
-                <img src="{{ asset('asset/images/curated/curated19/curated_c.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated22/curated_a.JPG') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated22/curated_b.JPG') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated22/curated_c.JPG') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated22/curated_d.JPG') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated22/curated_e.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
             </div>
         </div>
     </div>

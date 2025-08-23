@@ -219,24 +219,24 @@
         ]) 
         <!-- work 22 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work22']),
         'class' => 'card-left rotate-[-8deg]',
         'title' => 'Perancangan Kampanye Sosial Tentang Pentingnya Memperhatikan Kecantikan Natural   Bagi Remaja Perempuan dengan Konsumsi Sayur dan Buah.',
         'name' => 'Hanny Danawati',
         'nrp' => 'E12210011',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated22/curated_a.JPG',
         'type' => 'Campaign',
         ])
-
+        <!-- work 23 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work23']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Analisis Revolusi AI Dalam Desain: Studi Kasus Agensi Kreatif di Grow In Asia',
+        'name' => 'Calista Marvella',
+        'nrp' => 'E12210008',
         'image' => 'asset/images/curated/curated1.png',
         'type' => 'Thesis',
-        ])
+        ]) 
 
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work1']),
