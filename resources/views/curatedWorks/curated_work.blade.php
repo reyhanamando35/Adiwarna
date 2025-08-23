@@ -52,90 +52,90 @@
         'href' => route('curatedWorks.details', ['slug' => 'work5']),
         'class' => 'card-middle',
         'title' => 'Perancangan Iklan layanan masyarakat untuk mengurai arus lalu lintas yang ada di kota Surabaya',
-        'name' => 'Elia Patrick Hermawan Kuswanto',
+        'name' => 'Elia Patrick',
         'nrp' => 'E12210021',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated5/curated_f.jpg',
         'type' => 'Campaign',
         ])
-
+        <!-- work 6 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work6']),
         'class' => 'card-right rotate-[8deg]',
         'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
         'name' => 'Jessica Wijaya',
         'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated6/curated_a.png',
         'type' => 'Thesis',
         ])
-
+        <!-- work 7  -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work7']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Iklan layanan masyarakat - kampanye sosial - 1 tujuan untuk indonesia merdeka',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
+        'title' => 'Perancangan Desain Antarmuka Aplikasi Sebagai Alat Bantu Komunikasi Untuk Mahasiswa Tunarungu Di Surabaya',
+        'name' => 'Michelle Natalie',
+        'nrp' => 'E12210234',
+        'image' => 'asset/images/curated/curated7/curated_c.png',
         'type' => 'Thesis'
         ])
-
+        <!-- work 8 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work2']),
+        'href' => route('curatedWorks.details', ['slug' => 'work8']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Kampanye Edukasi Mengenai Bahaya Mengkonsumsi Gula Berlebih Bagi Generasi Muda di Surabaya',
+        'name' => 'Carla Victoria',
+        'nrp' => 'E12210041',
+        'image' => 'asset/images/curated/curated8/curated_b.png',
+        'type' => 'Campaign',
         ])
-
+        <!-- work 9 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work9']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
+        'title' => 'Perancangan Board Game Edukasi Bahasa Slang dan Budaya Inggris Raya',
+        'name' => 'Felicia Margaretha',
+        'nrp' => 'E12210261',
+        'image' => 'asset/images/curated/curated9/curated_b.jpg',
         'type' => 'Thesis',
         ])
-
+         <!-- work 10 -->   
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work10']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Game Visual Novel Tema Main Character Syndrome bagi Remaja 18 - 24 Tahun',
+        'name' => 'Stephanie Angelina',
+        'nrp' => 'E12210110',
+        'image' => 'asset/images/curated/curated10/curated_a.jpg',
+        'type' => 'Digital Media',
         ])
-
+        <!-- work 11 --> 
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work11']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
+        'title' => 'Analisis Makna Desain Poster Aktivitas Internasional Petra Christian University dan Sophia University',
+        'name' => 'Karina Anggi',
+        'nrp' => 'E12210183',
+        'image' => 'asset/images/curated/curated11/curated_a.png',
         'type' => 'Thesis',
         ])
-
+        <!-- work 12, not done yet -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work12']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Perancangan Board Game Sebagai Media Edukasi Untuk Mempersiapkan Anak Muda Sebelum Menikah',
+        'name' => 'Klaudia',
+        'nrp' => 'E12210045',
         'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'type' => 'Graphic Design',
         ])
-
+        <!-- work 13 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work13']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Iklan layanan masyarakat - kampanye sosial - 1 tujuan untuk indonesia merdeka',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis'
+        'title' => 'Perancangan rebranding logo dan strategi promosi Bakwan Family melalui sosial media',
+        'name' => 'Joceline Irene',
+        'nrp' => 'E12210050',
+        'image' => 'asset/images/curated/curated13/curated_a.jpeg',
+        'type' => 'Brand & Product Innovation'
         ])
 
         @include('curatedWorks.partials.card', [
