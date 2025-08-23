@@ -209,23 +209,23 @@
         ])
         <!-- work 21 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work21']),
         'class' => 'card-right rotate-[8deg]',
         'title' => 'Perancangan Strategi Komunikasi Brand untuk Pouch Pembalut Antimicrobial',
         'name' => 'Tiffany Gricella',
         'nrp' => 'E12210215',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated21/curated_e.jpg',
         'type' => 'Brand & Product Innovation',
-        ])
-
+        ]) 
+        <!-- work 22 -->
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work1']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Perancangan Kampanye Sosial Tentang Pentingnya Memperhatikan Kecantikan Natural   Bagi Remaja Perempuan dengan Konsumsi Sayur dan Buah.',
+        'name' => 'Hanny Danawati',
+        'nrp' => 'E12210011',
         'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'type' => 'Campaign',
         ])
 
         @include('curatedWorks.partials.card', [
