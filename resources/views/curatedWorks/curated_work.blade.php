@@ -137,14 +137,14 @@
         'image' => 'asset/images/curated/curated13/curated_a.jpeg',
         'type' => 'Brand & Product Innovation'
         ])
-
+        <!-- work 14 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work2']),
+        'href' => route('curatedWorks.details', ['slug' => 'work14']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
+        'title' => 'Analisis Personal Branding Lisa Blackpink dalam Tren Gaya Hidup Gen-Z',
+        'name' => 'Charlenne Chay',
+        'nrp' => 'E12210162',
+        'image' => 'asset/images/curated/curated14/curated_b.jpg',
         'type' => 'Thesis',
         ])
 
