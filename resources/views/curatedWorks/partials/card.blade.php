@@ -14,11 +14,11 @@
         <div class="absolute inset-0 flex flex-col justify-between h-full px-5 py-10 
                     opacity-0 translate-y-5 transition duration-500 
                     group-hover:opacity-100 group-hover:translate-y-0">
-            <p class="font-['Sen',sans-serif] text-[30px] text-[#EBE0C2]">{{ Str::limit($title, 35) }}</p>
+            <p class="font-['Sen',sans-serif] text-[25px] lg:text-[25px] text-[#EBE0C2]">{{ Str::limit($title, 35) }}</p>
             <div class="flex flex-col gap-3">
-                <p class="font-['Sen',sans-serif] text-[20px] text-[#EBE0C2]">{{ $name }}</p>
-                <p class="font-['Sen',sans-serif] text-[20px] text-[#EBE0C2]">{{ $nrp }}</p>
-                <p class="font-['Sen',sans-serif] text-[20px] text-[#EBE0C2]">{{ $type }}</p>
+                <p class="font-['Sen',sans-serif] text-[17px] lg:text-[20px] text-[#EBE0C2]">{{ $name }}</p>
+                <p class="font-['Sen',sans-serif] text-[17px] lg:text-[20px] text-[#EBE0C2]">{{ $nrp }}</p>
+                <p class="font-['Sen',sans-serif] text-[17px] lgtext-[20px] text-[#EBE0C2]">{{ $type }}</p>
             </div>
         </div> 
     </div>

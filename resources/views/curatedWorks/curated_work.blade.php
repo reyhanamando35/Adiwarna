@@ -7,32 +7,33 @@
 
 <div id="works-container" class="container translate-y-0 lg:-translate-y-[8rem] xl:translate-y-0 mt-0 xl:mt-[10rem] mx-auto pb-20">
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-20 items-end justify-items-center mt-[7rem]">
+        <!-- work 1 -->
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work1']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Iklan layanan masyarakat - kampanye sosial - 1 tujuan untuk indonesia merdeka',
+        'title' => 'Membaca Representasi Sandwich Generation dalam Serial Nightmares and Daydreams Karya Joko Anwar',
         'name' => 'Jessica Wijaya',
         'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated1/curated_a.jpg',
         'type' => 'Thesis'
         ])
-
+        <!-- work 2 -->
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work2']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Eksplorasi Budaya Fandom Melalui Perancangan Intellectual Property Karakter Goomi',
+        'name' => 'Karyn F. Ijaya',
+        'nrp' => 'E12210004',
+        'image' => 'asset/images/curated/curated2/curated_a.png',
+        'type' => 'Graphic Design',
         ])
-
+        <!-- work 3 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work3']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Analisis Citra Presiden Jokowi Melalui Ilustrasi Aufa Aqil Ghani Dengan Pendekatan Semiotika Roland Barthes',
+        'name' => 'Kevin Wijaya Tjahjono',
+        'nrp' => 'E12210072',
         'image' => 'asset/images/curated/curated1.png',
         'type' => 'Thesis',
         ])

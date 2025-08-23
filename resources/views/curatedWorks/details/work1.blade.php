@@ -49,7 +49,7 @@
     <div class=" sm:mt-24 lg:mt-36 flex flex-col lg:flex-row-reverse gap-10 sm:gap-[20rem] lg:gap-36 items-center">
         <!-- image -->
         <div class="z-10 mt-10 sm:mt-0 sm:h-[10rem] sm:w-[22rem] lg:h-auto lg:w-auto">
-            <img src="{{ asset('asset/images/curated/orang1.png') }}">
+            <img src="{{ asset('asset/images/curated/curated1/orang1.png') }}">
         </div>
         <!-- text -->
         <div class="w-4/5">
@@ -78,10 +78,12 @@
     <div id="artwork" class="relative mx-auto sm:mt-[5rem] lg:mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
         <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
             <div id="carousel-track" class="flex gap-6">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-1/2 sm:w-1/3 lg:w-1/3 aspect-[3/4] object-cover shadow-md snap-center">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-1/2  sm:w-1/3 lg:w-1/3 aspect-[4/3] object-cover shadow-md snap-center">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-1/2  sm:w-1/3 lg:w-1/3 aspect-[4/3] object-cover shadow-md snap-center">
-                <img src="{{ asset('asset/images/curated/curated1_a.png') }}" class="shrink-0 w-1/2  sm:w-1/3 lg:w-1/3 aspect-[4/3] object-cover shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1/curated_a.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1/curated_b.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1/curated_c.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1/curated_d.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1/curated_e.jpg') }}" class="shrink-0 w-1/2 max-h-[400px] h-auto object-contain shadow-md snap-center">
+                <img src="{{ asset('asset/images/curated/curated1/curated_f.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
             </div>
         </div>
     </div>
