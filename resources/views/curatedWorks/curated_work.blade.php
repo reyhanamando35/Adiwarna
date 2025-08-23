@@ -34,28 +34,28 @@
         'title' => 'Analisis Citra Presiden Jokowi Melalui Ilustrasi Aufa Aqil Ghani Dengan Pendekatan Semiotika Roland Barthes',
         'name' => 'Kevin Wijaya Tjahjono',
         'nrp' => 'E12210072',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated3/curated_j.png',
         'type' => 'Thesis',
         ])
-
+        <!-- work 4 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work4']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Rebranding "b.thelabel" untuk Meningkatkan Brand Awareness',
+        'name' => 'Cornellia Nadya',
+        'nrp' => 'E12210186',
+        'image' => 'asset/images/curated/curated4/curated_a.jpg',
+        'type' => 'Brand & Product Innovation',
         ])
-
+        <!-- work 5 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work5']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Perancangan Iklan layanan masyarakat untuk mengurai arus lalu lintas yang ada di kota Surabaya',
+        'name' => 'Elia Patrick Hermawan Kuswanto',
+        'nrp' => 'E12210021',
         'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'type' => 'Campaign',
         ])
 
         @include('curatedWorks.partials.card', [
