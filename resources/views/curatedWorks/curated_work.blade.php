@@ -374,28 +374,38 @@
         'title' => 'Perancangan Visual Branding untuk Digital Marketing Agency Cacafly Metrodata Indonesia',
         'name' => 'Feliany Angeline',
         'nrp' => 'E12210118',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated37/curated_a.png',
         'type' => 'Brand & Product Innovation',
         ])
-
+        <!-- work 38 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work38']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
+        'title' => 'Perancangan Permainan Diorama bagi Anak Usia 4 hingga 6 Tahun sebagai Media Pembelajaran Kosakata Bahasa Indonesia dan Bahasa Mandarin',
+        'name' => 'Natasha Christy Ignesius',
+        'nrp' => 'E12210116',
+        'image' => 'asset/images/curated/curated38/curated_a.png',
         'type' => 'Thesis',
         ])
-
+        <!-- work 39 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work39']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan VTuber Tokoh Cerita Rakyat Indonesia sebagai upaya meningkatkan minat remaja terhadap Budaya Lokal',
+        'name' => 'Christopher Owen Setiawan',
+        'nrp' => 'E12210196',
+        'image' => 'asset/images/curated/curated39/curated_d.jpg',
+        'type' => 'Digital Media',
+        ])
+        <!-- work 40 -->
+        @include('curatedWorks.partials.card', [
+        'href' => route('curatedWorks.details', ['slug' => 'work40']),
+        'class' => 'card-right rotate-[8deg]',
+        'title' => 'Perancangan Typeface Kediri dan Media Aplikasinya',
+        'name' => 'Albertus Christian Surya',
+        'nrp' => 'E12210083',
+        'image' => 'asset/images/curated/curated40/curated_d.png',
+        'type' => 'Graphic Design',
         ])
 
     </div>
