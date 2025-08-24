@@ -237,35 +237,35 @@
         'image' => 'asset/images/curated/curated23/curated_c.JPG',
         'type' => 'Thesis',
         ]) 
-
+        <!-- work 24 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work24']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Buku Interaktif Makna Warna Hijau Terhadap Persepsi Brand Berdasarkan Brand Makanan Sehat di Surabaya',
+        'name' => 'Fransiska Catharina',
+        'nrp' => 'E12210078',
+        'image' => 'asset/images/curated/curated24/curated_b.jpg',
+        'type' => 'Graphic Design',
         ])
-
+        <!-- work 25 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work25']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Iklan layanan masyarakat - kampanye sosial - 1 tujuan untuk indonesia merdeka',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis'
+        'title' => 'Perancangan Strategi Promosi Parfum Hyangee Melalui Media Sosial Untuk Membangun Brand Awareness dan Identitas Visual',
+        'name' => 'Eleonora Audrey',
+        'nrp' => 'E12210060',
+        'image' => 'asset/images/curated/curated25/curated_a.png',
+        'type' => 'Brand & Product Innovation'
         ])
-
+        <!-- work 26 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work2']),
+        'href' => route('curatedWorks.details', ['slug' => 'work26']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Perancangan Card Game untuk Memperkenalkan Ragam dan Makna Bunga kepada Anak Muda',
+        'name' => 'Cindy Natalia',
+        'nrp' => 'E12210128',
         'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'type' => 'Graphic Design',
         ])
 
         @include('curatedWorks.partials.card', [
