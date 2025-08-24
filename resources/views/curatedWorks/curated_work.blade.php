@@ -339,23 +339,23 @@
         ])
         <!-- work 34 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work34']),
         'class' => 'card-left rotate-[-8deg]',
         'title' => 'Perancangan Media Interaktif untuk Mengurangi Social Comparison di Media Sosial',
         'name' => 'Cheryl cecilia',
         'nrp' => 'E12210091',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated34/curated_a.png',
         'type' => 'Graphic Design',
         ])
-
+        <!-- work 35 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work35']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Video Marketing untuk PT. Riaputra Metalindo dalam Upaya Meningkatkan Brand Awareness Segmen Market Kontraktor',
+        'name' => 'Patrick Joshua Sindarto',
+        'nrp' => 'E12180026',
+        'image' => 'asset/images/curated/curated35/curated_f.jpg',
+        'type' => 'Digital Media',
         ])
 
         @include('curatedWorks.partials.card', [
