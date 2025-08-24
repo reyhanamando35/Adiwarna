@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', fn() => view('welcome'))->name('home');
 
 Route::prefix('events')->name('events.')->group(function () {
@@ -13,3 +14,8 @@ Route::prefix('events')->name('events.')->group(function () {
     Route::get('/lokakarya-ruparasa', fn() => view('events.lokakaryaRuparasa'))->name('lokakaryaRuparasa');
     Route::get('/sharing-alumni', fn() => view('events.sharingAlumni'))->name('sharingAlumni');
 });
+
+Route::get('/merch', function () {
+    return view('merch');
+});
+
