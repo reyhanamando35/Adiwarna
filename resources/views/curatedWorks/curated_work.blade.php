@@ -357,25 +357,25 @@
         'image' => 'asset/images/curated/curated35/curated_f.jpg',
         'type' => 'Digital Media',
         ])
-
+        <!-- work 36 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work36']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Strategi Komunikasi Visual tentang Brazilian Jiu-Jitsu sebagai Self-Defense',
+        'name' => 'Aloisius Thomas',
+        'nrp' => 'E12210079',
+        'image' => 'asset/images/curated/curated36/buku.png',
+        'type' => 'Campaign',
         ])
-
+        <!-- work 37 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work37']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Perancangan Visual Branding untuk Digital Marketing Agency Cacafly Metrodata Indonesia',
+        'name' => 'Feliany Angeline',
+        'nrp' => 'E12210118',
         'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'type' => 'Brand & Product Innovation',
         ])
 
         @include('curatedWorks.partials.card', [
