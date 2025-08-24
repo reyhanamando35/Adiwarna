@@ -77,6 +77,18 @@
     <div id="artwork" class="relative mx-auto sm:mt-[5rem] lg:mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
         <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
             <div id="carousel-track" class="flex gap-6">
+                <a href="https://drive.google.com/file/d/1kz8pULuxU8g2wPJXry_Xvk8zZbqU9fQc/view?usp=drive_link" target="_blank" class="shrink-0 max-h-[900px] w-auto h-auto object-contain shadow-md snap-center">
+                    <img src="{{ asset('asset/images/curated/curated39/video_a.png') }}" 
+                        class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                </a>
+                <a href="https://drive.google.com/file/d/1UHPwrh8y5bWoBFr6HNUSAB0Grwrwt_P7/view?usp=drive_link" target="_blank" class="shrink-0 max-h-[900px] w-auto h-auto object-contain shadow-md snap-center">
+                    <img src="{{ asset('asset/images/curated/curated39/video_b.png') }}" 
+                        class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                </a>
+                <a href="https://drive.google.com/file/d/1hfn5pjXMKBjJTal0PI2nj6sU34VRNQj0/view?usp=drive_link" target="_blank" class="shrink-0 max-h-[900px] w-auto h-auto object-contain shadow-md snap-center">
+                    <img src="{{ asset('asset/images/curated/curated39/video_c.png') }}" 
+                        class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                </a>
                 <img src="{{ asset('asset/images/curated/curated39/curated_a.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 <img src="{{ asset('asset/images/curated/curated39/curated_b.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 <img src="{{ asset('asset/images/curated/curated39/curated_c.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">

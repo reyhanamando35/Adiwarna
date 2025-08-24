@@ -78,6 +78,10 @@
     <div id="artwork" class="relative mx-auto sm:mt-[5rem] lg:mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
         <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
             <div id="carousel-track" class="flex gap-6">
+                <a href="https://drive.google.com/file/d/1Rzq3nDtlqoVCfwt8g_23Vinhac7xhMw1/view?usp=drive_link" target="_blank" class="shrink-0 max-h-[900px] w-auto h-auto object-contain shadow-md snap-center">
+                    <img src="{{ asset('asset/images/curated/curated15/video_a.png') }}" 
+                        class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                </a>
                 <img src="{{ asset('asset/images/curated/curated15/curated_a.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 <img src="{{ asset('asset/images/curated/curated15/curated_b.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 <img src="{{ asset('asset/images/curated/curated15/curated_c.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">

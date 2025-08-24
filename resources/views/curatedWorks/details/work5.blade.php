@@ -81,18 +81,17 @@
     <div id="artwork" class="relative mx-auto sm:mt-[5rem] lg:mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
         <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
             <div id="carousel-track" class="flex gap-6">
-                <video controls class="shrink-0 max-h-[400px] w-auto object-contain shadow-md">
-                    <source src="/asset/images/curated/curated5/curated_a.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-                
+                 <a href="https://drive.google.com/file/d/1p4Ux668hndcECszhQ5fxa8DvLSLiqCYz/view?usp=sharing" target="_blank" class="shrink-0 max-h-[900px] w-auto h-auto object-contain shadow-md snap-center">
+                    <img src="{{ asset('asset/images/curated/curated5/video_a.png') }}" 
+                        class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                </a>
                 <img src="{{ asset('asset/images/curated/curated5/curated_b.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 <img src="{{ asset('asset/images/curated/curated5/curated_c.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 <img src="{{ asset('asset/images/curated/curated5/curated_d.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
-                <video controls class="shrink-0 max-h-[400px] w-auto object-contain shadow-md">
-                    <source src="/asset/images/curated/curated5/curated_e.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
+                <a href="https://drive.google.com/file/d/1Gd34oq6kPcurZEIgh7FAKdgKEaJdAgeD/view?usp=drive_link" target="_blank" class="shrink-0 max-h-[900px] w-auto h-auto object-contain shadow-md snap-center">
+                    <img src="{{ asset('asset/images/curated/curated5/video_b.png') }}" 
+                        class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                </a>
                 <img src="{{ asset('asset/images/curated/curated5/curated_f.jpg') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
             </div>
         </div>

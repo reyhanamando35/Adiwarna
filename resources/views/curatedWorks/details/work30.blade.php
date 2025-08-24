@@ -46,7 +46,7 @@
         </a>
     </div>
     <h1 class=" w-full sm:w-[80%] sm:mt-10 lg:mt-20 maragsa text-[#A14000] font-bold text-[22px] sm:text-[35px] lg:text-[45px] leading-none">Perancangan Prototype Game Bergenre Visual Novel sebagai Media Peningkatan Awareness akan Konten Glorifikasi Toxic Relationship</h1>
-
+ 
     <!-- body -->
     <div class=" sm:mt-24 lg:mt-36 flex flex-col lg:flex-row-reverse gap-10 sm:gap-[20rem] lg:gap-36 items-center">
         <!-- image -->
@@ -80,6 +80,10 @@
     <div id="artwork" class="relative mx-auto sm:mt-[5rem] lg:mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
         <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
             <div id="carousel-track" class="flex gap-6">
+                <a href="https://drive.google.com/file/d/1_OPQzYfmAa7FJO3AN_mcVL5n0RJ4-R--/view?usp=drive_link" target="_blank" class="shrink-0 max-h-[900px] w-auto h-auto object-contain shadow-md snap-center">
+                    <img src="{{ asset('asset/images/curated/curated30/video_a.png') }}" 
+                        class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
+                </a>
                 <img src="{{ asset('asset/images/curated/curated30/curated_a.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 <img src="{{ asset('asset/images/curated/curated30/curated_b.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 <img src="{{ asset('asset/images/curated/curated30/curated_c.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
