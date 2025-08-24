@@ -277,35 +277,35 @@
         'image' => 'asset/images/curated/curated27/curated_a.jpg',
         'type' => 'Graphic Design',
         ])
-
+        <!-- work 28 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work28']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Kemasan Buah Tomat dan Terong Organik Kelompok Wanita Tani Sejahtera 09 Beji Kota Depok',
+        'name' => 'Kayla Nathania',
+        'nrp' => 'E12210168',
+        'image' => 'asset/images/curated/curated28/curated_a.png',
+        'type' => 'Graphic Design',
         ])
-
+        <!-- work 29 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work29']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Media Interaktif dalam Menerapkan Mindful Living bagi Generasi Z',
+        'name' => 'Giovanni Angie',
+        'nrp' => 'E12210061',
+        'image' => 'asset/images/curated/curated29/curated_a.jpg',
+        'type' => 'Digital Media',
         ])
-
+        <!-- work 30 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work30']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Prototype Game Bergenre Visual Novel sebagai Media Peningkatan Awareness akan Konten Glorifikasi Toxic Relationship',
+        'name' => 'Jessica Vanessa',
+        'nrp' => 'E12210053',
+        'image' => 'asset/images/curated/curated30/curated_a.png',
+        'type' => 'Digital Media',
         ])
 
         @include('curatedWorks.partials.card', [
@@ -314,7 +314,7 @@
         'title' => 'Iklan layanan masyarakat - kampanye sosial - 1 tujuan untuk indonesia merdeka',
         'name' => 'Jessica Wijaya',
         'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated30/curated.png',
         'type' => 'Thesis'
         ])
 

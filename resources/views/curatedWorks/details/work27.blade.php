@@ -58,14 +58,14 @@
             <h1 class="maragsa text-[#67753E] text-[28px] sm:text-[35px] lg:text-[45px]">Nathania Bintang Javier</h1>
             <h1 class="maragsa text-[#67753E] text-[18px] sm:text-[25px] lg:text-[35px] mt-2 lg:mt-5">E12210119 - Graphic Design</h1>
             <p class="mt-10 lg:mt-5 text-[15px] lg:text-[20px]">
-                "Perancangan desain kemasan dupa untuk brand Rossi dilatarbelakangi oleh kebutuhan akan kemasan yang tidak hanya melindungi produk, tetapi juga mampu merepresentasikan nilai alami dan fungsionalitas yang diusung brand. Produk dupa Rossi, yang dipasarkan melalui pop-up store di Bali dan menyasar wisatawan asing, sebelumnya menggunakan kemasan yang kurang kokoh dan tidak menyertakan alat bantu penggunaan seperti tatakan dupa. Hal ini mengurangi pengalaman pengguna serta nilai jual produk secara keseluruhan.
+                Perancangan desain kemasan dupa untuk brand Rossi dilatarbelakangi oleh kebutuhan akan kemasan yang tidak hanya melindungi produk, tetapi juga mampu merepresentasikan nilai alami dan fungsionalitas yang diusung brand. Produk dupa Rossi, yang dipasarkan melalui pop-up store di Bali dan menyasar wisatawan asing, sebelumnya menggunakan kemasan yang kurang kokoh dan tidak menyertakan alat bantu penggunaan seperti tatakan dupa. Hal ini mengurangi pengalaman pengguna serta nilai jual produk secara keseluruhan.
             </p>
             <div id="more-info" class="hidden">
                 <p class="mt-5 text-[15px] lg:text-[20px]">
                     Solusi yang ditawarkan adalah perancangan kemasan berbentuk prisma segitiga dari bahan brown kraft 350gsm, yang tidak hanya tampil kokoh dan menarik secara visual, tetapi juga memiliki fungsi tambahan sebagai tatakan dupa. Pendekatan desain ini mempertimbangkan estetika minimalis, elemen visual khas Bali, dan nilai ramah lingkungan, sejalan dengan identitas merek Rossi sebagai produk alami khas Bali.
                 </p>
                 <p class="mt-5 text-[15px] lg:text-[20px]">
-                    Tujuan dari perancangan ini adalah untuk meningkatkan daya tarik, memperkuat identitas visual, dan menambah nilai guna produk. Output dari karya ini berupa desain kemasan baru yang informatif, fungsional, serta siap mendukung strategi pemasaran Rossi di pasar yang kompetitif."  
+                    Tujuan dari perancangan ini adalah untuk meningkatkan daya tarik, memperkuat identitas visual, dan menambah nilai guna produk. Output dari karya ini berupa desain kemasan baru yang informatif, fungsional, serta siap mendukung strategi pemasaran Rossi di pasar yang kompetitif. 
                 </p>
             </div>
 
