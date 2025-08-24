@@ -307,45 +307,45 @@
         'image' => 'asset/images/curated/curated30/curated_a.png',
         'type' => 'Digital Media',
         ])
-
+        <!-- work 31 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work31']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Iklan layanan masyarakat - kampanye sosial - 1 tujuan untuk indonesia merdeka',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated30/curated.png',
-        'type' => 'Thesis'
+        'title' => 'Perancangan Strategi Komunikasi Praktek Dr. Sindy kepada Remaja dan Orang Tua',
+        'name' => 'Vanessa Angelica',
+        'nrp' => 'E12210080',
+        'image' => 'asset/images/curated/curated31/curated_a.jpg',
+        'type' => 'Campaign'
         ])
-
+        <!-- work 32 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work2']),
+        'href' => route('curatedWorks.details', ['slug' => 'work32']),
         'class' => 'card-middle',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Light Novel sebagai Media untuk Mendukung Pemulihan Emosional Remaja yang Mengalami Self-Harm',
+        'name' => 'Tjiu Nick',
+        'nrp' => 'E12210123',
+        'image' => 'asset/images/curated/curated32/curated_a.png',
+        'type' => 'Graphic Design',
         ])
-
+        <!-- work 33 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work33']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Media Edukatif Interaktif untuk Membantu Anak Usia Dini Mengatasi Rasa Cemas',
+        'name' => 'Devina Sisilia',
+        'nrp' => 'E12210257',
+        'image' => 'asset/images/curated/curated33/curated_f.png',
+        'type' => 'Graphic Design',
         ])
-
+        <!-- work 34 -->
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work1']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'title' => 'Perancangan Media Interaktif untuk Mengurangi Social Comparison di Media Sosial',
+        'name' => 'Cheryl cecilia',
+        'nrp' => 'E12210091',
         'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'type' => 'Graphic Design',
         ])
 
         @include('curatedWorks.partials.card', [
