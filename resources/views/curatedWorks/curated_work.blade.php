@@ -221,7 +221,7 @@
         @include('curatedWorks.partials.card', [
         'href' => route('curatedWorks.details', ['slug' => 'work22']),
         'class' => 'card-left rotate-[-8deg]',
-        'title' => 'Perancangan Kampanye Sosial Tentang Pentingnya Memperhatikan Kecantikan Natural   Bagi Remaja Perempuan dengan Konsumsi Sayur dan Buah.',
+        'title' => 'Perancangan Kampanye Sosial Tentang Pentingnya Memperhatikan Kecantikan Natural Bagi Remaja Perempuan dengan Konsumsi Sayur dan Buah.',
         'name' => 'Hanny Danawati',
         'nrp' => 'E12210011',
         'image' => 'asset/images/curated/curated22/curated_a.JPG',
@@ -234,7 +234,7 @@
         'title' => 'Analisis Revolusi AI Dalam Desain: Studi Kasus Agensi Kreatif di Grow In Asia',
         'name' => 'Calista Marvella',
         'nrp' => 'E12210008',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated23/curated_c.JPG',
         'type' => 'Thesis',
         ]) 
 

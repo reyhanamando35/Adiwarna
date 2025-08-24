@@ -45,7 +45,7 @@
             Go back
         </a>
     </div>
-    <h1 class=" w-full sm:w-[80%] sm:mt-10 lg:mt-20 maragsa text-[#A14000] font-bold text-[22px] sm:text-[35px] lg:text-[45px] leading-none">Analisis Revolusi AI Dalam Desain: Studi Kasus Agensi Kreatif di Grow In Asia.</h1>
+    <h1 class=" w-full sm:w-[80%] sm:mt-10 lg:mt-20 maragsa text-[#A14000] font-bold text-[22px] sm:text-[35px] lg:text-[45px] leading-none">Perancangan Kampanye Sosial Tentang Pentingnya Memperhatikan Kecantikan Natural Bagi Remaja Perempuan dengan Konsumsi Sayur dan Buah.</h1>
 
     <!-- body -->
     <div class=" sm:mt-24 lg:mt-36 flex flex-col lg:flex-row-reverse gap-10 sm:gap-[20rem] lg:gap-36 items-center">
