@@ -51,7 +51,7 @@
     <div class=" sm:mt-24 lg:mt-36 flex flex-col lg:flex-row-reverse gap-10 sm:gap-[20rem] lg:gap-36 items-center">
         <!-- image -->
         <div class="z-10 mt-10 sm:mt-0 sm:h-[10rem] sm:w-[22rem] lg:h-auto lg:w-2/3">
-            <img src="{{ asset('asset/images/curated/curated23/orang.jpg') }}">
+            <img src="{{ asset('asset/images/curated/curated25/orang.jpg') }}">
         </div>
         <!-- text -->
         <div class="w-4/5">
@@ -77,7 +77,7 @@
     <div id="artwork" class="relative mx-auto sm:mt-[5rem] lg:mt-[10rem] max-w-[90vw] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[900px]">
         <div id="artwork-viewport" class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
             <div id="carousel-track" class="flex gap-6">
-                 <a href="{{ asset('asset/images/curated/curated25/buku.pdf') }}" target="_blank">
+                 <a href="{{ asset('asset/images/curated/curated25/buku.pdf') }}" target="_blank" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                     <img src="{{ asset('asset/images/curated/curated25/buku.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center">
                 </a>
                 <img src="{{ asset('asset/images/curated/curated25/curated_a.png') }}" class="shrink-0 max-h-[400px] w-auto h-auto object-contain shadow-md snap-center" >

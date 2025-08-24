@@ -12,8 +12,8 @@
         'href' => route('curatedWorks.details', ['slug' => 'work1']),
         'class' => 'card-left rotate-[-8deg]',
         'title' => 'Membaca Representasi Sandwich Generation dalam Serial Nightmares and Daydreams Karya Joko Anwar',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
+        'name' => 'Jasmine Claudia',
+        'nrp' => 'E12210103',
         'image' => 'asset/images/curated/curated1/curated_a.jpg',
         'type' => 'Thesis'
         ])
@@ -264,18 +264,18 @@
         'title' => 'Perancangan Card Game untuk Memperkenalkan Ragam dan Makna Bunga kepada Anak Muda',
         'name' => 'Cindy Natalia',
         'nrp' => 'E12210128',
-        'image' => 'asset/images/curated/curated1.png',
+        'image' => 'asset/images/curated/curated26/curated_a.jpg',
         'type' => 'Graphic Design',
         ])
-
+        <!-- work 27 -->
         @include('curatedWorks.partials.card', [
-        'href' => route('curatedWorks.details', ['slug' => 'work1']),
+        'href' => route('curatedWorks.details', ['slug' => 'work27']),
         'class' => 'card-right rotate-[8deg]',
-        'title' => 'Analisis Konten Explore Surabaya dalam Meningkatkan Engagement',
-        'name' => 'Jessica Wijaya',
-        'nrp' => 'E12210217',
-        'image' => 'asset/images/curated/curated1.png',
-        'type' => 'Thesis',
+        'title' => 'Perancangan Desain Kemasan Kreatif Untuk Produk Dupa Brand Rossi Sebagai Upaya Meningkatkan Daya Tarik & Nilai Jual',
+        'name' => 'Nathania Bintang Javier',
+        'nrp' => 'E12210119',
+        'image' => 'asset/images/curated/curated27/curated_a.jpg',
+        'type' => 'Graphic Design',
         ])
 
         @include('curatedWorks.partials.card', [
