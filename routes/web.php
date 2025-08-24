@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CuratedWorksController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -15,6 +16,19 @@ Route::prefix('events')->name('events.')->group(function () {
     Route::get('/sharing-alumni', fn() => view('events.sharingAlumni'))->name('sharingAlumni');
 });
 
+
+Route::get('/curated-works', function () {
+    return view('curatedWorks.curated_work');
+});
+Route::get('/details/{slug}', function ($slug) {
+    $view = "curatedWorks.details.$slug";
+
+    if (!view()->exists($view)) {
+        abort(404);
+    }
+
+    return view($view);
+})->name('curatedWorks.details');
 Route::get('/about', function () {
     return view('about');
 });
