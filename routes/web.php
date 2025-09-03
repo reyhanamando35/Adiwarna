@@ -3,8 +3,10 @@
 use App\Http\Controllers\CuratedWorksController;
 use Illuminate\Support\Facades\Route;
 
-
-Route::get('/', fn() => view('welcome'))->name('home');
+Route::get('/', function () {
+    return view('welcome');
+})->name('home');
+// Route::get('/', fn() => view('welcome'))->name('home');
 
 Route::prefix('events')->name('events.')->group(function () {
     Route::get('/', fn() => view('upcoming'))->name('upcoming');
@@ -19,7 +21,7 @@ Route::prefix('events')->name('events.')->group(function () {
 
 Route::get('/curated-works', function () {
     return view('curatedWorks.curated_work');
-});
+})->name('curatedWorks.index');
 Route::get('/details/{slug}', function ($slug) {
     $view = "curatedWorks.details.$slug";
 
@@ -29,10 +31,12 @@ Route::get('/details/{slug}', function ($slug) {
 
     return view($view);
 })->name('curatedWorks.details');
+// Route::get('/details/{slug}', [CuratedWorksController::class, 'show'])
+//      ->name('curatedWorks.details');
 Route::get('/about', function () {
     return view('about');
-});
+})->name('about');
 Route::get('/merch', function () {
     return view('merch');
-});
+})->name('merch');
 

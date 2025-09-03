@@ -19,7 +19,7 @@
     <meta property="og:locale" content="id_ID" />
 
     {{-- tailwind --}}
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 
     <!-- AOS -->
@@ -27,7 +27,12 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            AOS.init();
+            AOS.init({
+                once: true,
+                offset: 0,
+                duration: 800,
+                startEvent: 'DOMContentLoaded'
+            });
         });
     </script>
 
@@ -38,7 +43,10 @@
     <script>
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     </script>
-
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+   
     {{-- font awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -52,6 +60,39 @@
             overflow-x: hidden;
             scroll-behavior: smooth;
             scrollbar-width: none;
+        }
+
+        .maragsa {
+            font-family: 'Maragsa', serif;
+        }
+
+        /* Works in Chrome, Edge, Safari */
+        #works-container::-webkit-scrollbar {
+            height: 12px;
+            /* for horizontal scroll */
+        }
+
+        #works-container::-webkit-scrollbar-track {
+            background: #67753E;
+            /* your olive green */
+        }
+
+        #works-container::-webkit-scrollbar-thumb {
+            background-color: #A14000;
+            /* accent orange/brown */
+            border-radius: 8px;
+        }
+
+        #works-container::-webkit-scrollbar-thumb:hover {
+            background-color: #7a2f00;
+            /* darker accent on hover */
+        }
+
+        /* Firefox support */
+        #works-container {
+            scrollbar-width: thin;
+            scrollbar-color: #A14000 #67753E;
+            /* thumb | track */
         }
 
         :root {
@@ -169,6 +210,27 @@
         .swal2-success-fix {
             background: transparent !important;
         }
+
+        .about {
+            background-color: #ece1c3;
+            font-family: 'Sen', sans-serif;
+            margin: 0;
+            /* margin-top: 50px; */
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #3c490c;
+            /* overflow: auto;  */
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                overflow: auto;
+                padding: 20px;
+            }
+        }
     </style>
     @stack('styles')
     @yield('head')
@@ -210,6 +272,7 @@
 
     @stack('scripts')
     @yield('script')
+
 </body>
 
 </html>

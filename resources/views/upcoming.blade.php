@@ -3,17 +3,18 @@
     @php
         request()->routeIs('events.*');
     @endphp
+    {{-- <h1 style="color:red; z-index:9999;">TEST</h1> --}}
 
     <div class="w-screen max-w-screen relative flex flex-col bg-[var(--beige)] justify-center items-center z-[988]">
 
-        <div class="absolute z-[1] left-[-45%] top-[13.75%] h-1/2 w-full bg-[linear-gradient(180deg,_rgba(117,147,173,60)_19%,_rgba(117,147,173,0)_100%)]"
+        <div class="absolute -z-10  left-[-45%] top-[13.75%] h-1/2 w-full bg-[linear-gradient(180deg,_rgba(117,147,173,60)_19%,_rgba(117,147,173,0)_100%)]"
             style="-webkit-mask: url('{{ asset('assets/fingerprint/jessicaHome1.png') }}') no-repeat center / contain;
             mask: url('{{ asset('assets/fingerprint/jessicaHome1.png') }}') no-repeat center / contain;
             filter: drop-shadow(3px 3px 3px white);
             transform: rotate(20deg);"
             data-aos="fade" data-aos-duration="900" data-aos-delay="150" data-aos-once="true">
         </div>
-        <div class="absolute z-[1] right-[-45%] top-[-4.75%] h-[45%] w-[90%] bg-[linear-gradient(180deg,_rgba(117,147,173,60)_19%,_rgba(117,147,173,0)_100%)]"
+        <div class="absolute -z-10  right-[-45%] top-[-4.75%] h-[45%] w-[90%] bg-[linear-gradient(180deg,_rgba(117,147,173,60)_19%,_rgba(117,147,173,0)_100%)]"
             style="-webkit-mask: url('{{ asset('assets/fingerprint/jessicaHome1.png') }}') no-repeat center / contain;
             mask: url('{{ asset('assets/fingerprint/jessicaHome1.png') }}') no-repeat center / contain;
             filter: drop-shadow(3px 3px 3px white);
@@ -21,29 +22,26 @@
             data-aos="fade" data-aos-duration="900" data-aos-delay="250" data-aos-once="true">
         </div>
 
-        <div class="absolute z-[1] right-[-20%] bottom-[14.75%] h-[45%] w-[90%] bg-[linear-gradient(180deg,_rgba(117,147,173,60)_19%,_rgba(117,147,173,0)_100%)]"
+        <div class="absolute -z-10  right-[-20%] bottom-[14.75%] h-[45%] w-[90%] bg-[linear-gradient(180deg,_rgba(117,147,173,60)_19%,_rgba(117,147,173,0)_100%)]"
             style="-webkit-mask: url('{{ asset('assets/fingerprint/charista1.png') }}') no-repeat center / contain;
             mask: url('{{ asset('assets/fingerprint/charista1.png') }}') no-repeat center / contain;
             filter: drop-shadow(3px 3px 3px white);"
             data-aos="fade" data-aos-duration="900" data-aos-delay="350" data-aos-once="true">
         </div>
 
-        <div class="w-[90%] z-10 pb-[3vh] pt-[17.5vh] flex justify-center items-center flex-col" data-aos="fade-up"
+        <div class="w-[90%] relative z-20 pb-[3vh] pt-[17.5vh] flex justify-center items-center flex-col" data-aos="fade-up"
             data-aos-duration="800" data-aos-once="true">
             <div class="w-full flex justify-start items-center text-center">
-                <h1 id="these" class="font-sen tracking-[0.3em] text-[var(--light-green)]" data-aos="fade-right"
-                    data-aos-duration="800" data-aos-delay="150" data-aos-once="true">
+                <h1 id="these" class="font-sen tracking-[0.3em] text-[var(--light-green)]" >
                     These are our
                 </h1>
             </div>
             <div id="title" class="w-full flex flex-col justify-center items-center">
                 <div class="w-full justify-start items-center flex">
-                    <h1 class="font-maragsa text-[var(--red)]" data-aos="zoom-in" data-aos-duration="700"
-                        data-aos-delay="200" data-aos-once="true">Upcoming</h1>
+                    <h1 class="font-maragsa text-[var(--red)]" >Upcoming</h1>
                 </div>
                 <div class="w-full justify-center items-center flex">
-                    <h1 class="font-maragsa text-[var(--red)] pr-0 sm:pr-[15%]" data-aos="zoom-in" data-aos-duration="700"
-                        data-aos-delay="300" data-aos-once="true">Events</h1>
+                    <h1 class="font-maragsa text-[var(--red)] pr-0 sm:pr-[15%]" >Events</h1>
                 </div>
             </div>
 
@@ -58,7 +56,7 @@
 
         </div>
 
-        <div class="w-[85%] z-10 pb-[10%] flex justify-center items-center" data-aos="fade-up" data-aos-duration="900"
+        <div class="w-[85%] relative z-20 pb-[10%] flex justify-center items-center" data-aos="fade-up" data-aos-duration="900"
             data-aos-once="true">
             <div id="kiri" class="w-[50%] flex flex-col justify-center items-center">
                 <div class="postCont w-[90%] flex justify-center items-center relative poster-container" data-aos="fade-up"
@@ -157,6 +155,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
         @include('components.footer')
@@ -342,20 +341,20 @@
                         });
 
                         // Posters slight rise on scroll (complement AOS)
-                        document.querySelectorAll('.postCont').forEach((card, i) => {
-                            gsap.from(card, {
-                                y: 30,
-                                opacity: 0,
-                                duration: 0.6,
-                                scrollTrigger: {
-                                    trigger: card,
-                                    start: "top 85%",
-                                    toggleActions: "play none none reverse"
-                                }
-                            });
-                        });
+                        // document.querySelectorAll('.postCont').forEach((card, i) => {
+                        //     gsap.from(card, {
+                        //         y: 30,
+                        //         opacity: 0,
+                        //         duration: 0.6,
+                        //         scrollTrigger: {
+                        //             trigger: card,
+                        //             start: "top 85%",
+                        //             toggleActions: "play none none reverse"
+                        //         }
+                        //     });
+                        // });
                     }
                 }
             });
         </script>
-    @endsection()
+@endsection

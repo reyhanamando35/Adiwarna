@@ -728,4 +728,4 @@
 
             });
         </script>
-    @endsection()
+@endsection()

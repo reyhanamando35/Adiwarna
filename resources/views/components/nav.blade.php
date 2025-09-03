@@ -48,7 +48,7 @@
         </div>
 
         <!-- ABOUT -->
-        <div id="menuAbout" onclick="window.location.href='{{ route('home') }}'"
+        <div id="menuAbout" onclick="window.location.href='{{ route('about') }}'"
             class="w-[19vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute left-[12%] top-[65%] w-full h-full flex justify-center items-center">
                 <div
@@ -59,11 +59,11 @@
         </div>
 
         <!-- WORKS -->
-        <div id="menuWorks" onclick="window.location.href='{{ route('home') }}'"
+        <div id="menuWorks" onclick="window.location.href='{{ route('curatedWorks.index') }}'"
             class="w-[28vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute top-0 left-[-2%] w-full h-full flex justify-center items-center">
                 <div
-                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('works') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('curatedWorks.index') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
                 </div>
                 <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Curated Works
                 </h1>
@@ -71,15 +71,15 @@
         </div>
 
         <!-- MERCH -->
-        <div id="menuMerch" onclick="window.location.href='{{ route('home') }}'"
-            class="w-[17vw] aspect-square relative flex justify-center items-center rounded-full">
-            <div class="absolute left-[-10%] top-[54%] w-full h-full flex justify-center items-center">
-                <div
-                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('merch') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+            <div id="menuMerch" onclick="window.location.href='{{ route('merch') }}'"
+                class="w-[17vw] aspect-square relative flex justify-center items-center rounded-full">
+                <div class="absolute left-[-10%] top-[54%] w-full h-full flex justify-center items-center">
+                    <div
+                        class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('merch') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+                    </div>
+                    <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Merch</h1>
                 </div>
-                <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Merch</h1>
             </div>
-        </div>
 
         <!-- EVENTS -->
         <div id="menuEvents" onclick="window.location.href='{{ route('events.upcoming') }}'"
@@ -291,6 +291,7 @@
         }
     }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 <script>
     document.addEventListener("contextmenu", function(e) {
