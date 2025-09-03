@@ -19,7 +19,7 @@ Route::prefix('events')->name('events.')->group(function () {
 
 Route::get('/curated-works', function () {
     return view('curatedWorks.curated_work');
-});
+})->name('curatedWorks.work');
 Route::get('/details/{slug}', function ($slug) {
     $view = "curatedWorks.details.$slug";
 
@@ -29,10 +29,12 @@ Route::get('/details/{slug}', function ($slug) {
 
     return view($view);
 })->name('curatedWorks.details');
+
 Route::get('/about', function () {
     return view('about');
-});
-Route::get('/merch', function () {
+})->name('about');
+
+Route::get('/merchs', function () {
     return view('merch');
-});
+})->name('merch');
 

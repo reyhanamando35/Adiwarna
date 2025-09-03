@@ -1,4 +1,4 @@
-<nav class="w-screen max-h-full bg-[var(--light-green)] flex flex-col justify-center items-center fixed z-[990]">
+<nav class="w-screen max-h-full bg-[var(--light-green)] flex flex-col justify-center items-center fixed z-[999]">
     <div class="w-[90%] z-[10] flex items-center justify-between px-4">
         <div class="w-full max-w-[20%] flex justify-between items-center">
             <div id="logoContainer" class="flex flex-row-reverse gap-[7.5%] justify-center items-center">
@@ -48,7 +48,7 @@
         </div>
 
         <!-- ABOUT -->
-        <div id="menuAbout" onclick="window.location.href='{{ route('home') }}'"
+        <div id="menuAbout" onclick="window.location.href='{{ route('about') }}'"
             class="w-[19vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute left-[12%] top-[65%] w-full h-full flex justify-center items-center">
                 <div
@@ -59,11 +59,11 @@
         </div>
 
         <!-- WORKS -->
-        <div id="menuWorks" onclick="window.location.href='{{ route('home') }}'"
+        <div id="menuWorks" onclick="window.location.href='{{ route('curatedWorks.work') }}'"
             class="w-[28vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute top-0 left-[-2%] w-full h-full flex justify-center items-center">
                 <div
-                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('works') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
+                    class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('curatedWorks.*') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
                 </div>
                 <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Curated Works
                 </h1>
@@ -71,7 +71,7 @@
         </div>
 
         <!-- MERCH -->
-        <div id="menuMerch" onclick="window.location.href='{{ route('home') }}'"
+        <div id="menuMerch" onclick="window.location.href='{{ route('merch') }}'"
             class="w-[17vw] aspect-square relative flex justify-center items-center rounded-full">
             <div class="absolute left-[-10%] top-[54%] w-full h-full flex justify-center items-center">
                 <div

@@ -43,10 +43,10 @@
         <div class="footer-links-container">
             <div class="footer-links">
                 <div onclick="window.location.href='{{ route('home') }}'" class="{{ request()->routeIs('home') ? 'active' : '' }}">Home</div>
-                <div onclick="window.location.href='{{ route('home') }}'" class="{{ request()->routeIs('about') ? 'active' : '' }}">About Us</div>
-                <div onclick="window.location.href='{{ route('home') }}'" class="{{ request()->routeIs('works.*') ? 'active' : '' }}">Curated Works</div>
+                <div onclick="window.location.href='{{ route('about') }}'" class="{{ request()->routeIs('about') ? 'active' : '' }}">About Us</div>
+                <div onclick="window.location.href='{{ route('curatedWorks.work') }}'" class="{{ request()->routeIs('curatedWorks.*') ? 'active' : '' }}">Curated Works</div>
                 <div onclick="window.location.href='{{ route('events.upcoming') }}'" class="{{ request()->routeIs('events.*') ? 'active' : '' }}">Events</div>
-                <div onclick="window.location.href='{{ route('events.upcoming') }}'" class="{{ request()->routeIs('merch') ? 'active' : '' }}">Merch</div>
+                <div onclick="window.location.href='{{ route('merch') }}'" class="{{ request()->routeIs('merch') ? 'active' : '' }}">Merch</div>
             </div>
 
         </div>
