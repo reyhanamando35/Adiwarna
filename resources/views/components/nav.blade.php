@@ -77,9 +77,7 @@
                 <div
                     class="w-full h-full absolute rounded-full z-[2] {{ request()->routeIs('merch') ? 'bg-[#EBE0C2] active-glow' : 'bg-[#EBE0C2]/60' }}">
                 </div>
-                <h1 class="text-[var(--light-green)] z-[3] uppercase font-maragsa font-bold text-center">Merch</h1>
             </div>
-        </div>
 
         <!-- EVENTS -->
         <div id="menuEvents" onclick="window.location.href='{{ route('events.upcoming') }}'"
@@ -291,6 +289,7 @@
         }
     }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 <script>
     document.addEventListener("contextmenu", function(e) {

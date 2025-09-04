@@ -88,6 +88,7 @@
 </div>
 
 
+
 <style>
     /* * Palet Warna Berdasarkan Gambar:
      * Background: #ece1c3
@@ -110,7 +111,6 @@
         color: #3c490c;
         position: relative;
         z-index: 988;
-    }
 
     /* Spacer untuk mencegah footer overlap */
     .about-footer-spacer {
@@ -224,6 +224,7 @@
     #text-3 strong {
         color: #a14000;
     }
+
 
     #text-4 {
         top: 34.5%;
