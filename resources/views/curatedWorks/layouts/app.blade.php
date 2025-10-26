@@ -164,9 +164,9 @@
     <div class="px-16 py-12 z-[988] mx-auto overflow-x-hidden relative">
         @yield('content')
     </div>
-    {{-- <div class="flex z-[988] justify-center items-center w-screen">
+    <div class="flex z-[988] justify-center items-center w-screen">
         @include('components.footer')
-    </div> --}}
+    </div>
 
 </body>
 

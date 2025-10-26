@@ -217,7 +217,7 @@
     }
 
     #text-3 {
-        top: 99.5%;
+        top: 95.5%;
         left: -9.5%; /* lebih ke kiri */
         animation: fadeInLeft 1s ease-out 3s forwards;
     }
