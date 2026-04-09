@@ -15,6 +15,9 @@ Route::prefix('events')->name('events.')->group(function () {
     Route::get('/sharing-alumni', fn() => view('events.sharingAlumni'))->name('sharingAlumni');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
 Route::get('/merch', function () {
     return view('merch');
 });
